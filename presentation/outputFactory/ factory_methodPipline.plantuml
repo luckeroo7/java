@@ -1,0 +1,25 @@
+@startuml
+actor User
+participant Main
+participant NotificationManager
+participant EmailNotificationFactory
+participant EmailNotification
+participant SMSNotificationFactory
+participant SMSNotification
+
+User -> Main : запуск программы
+
+Main -> NotificationManager : sendNotification("email", "Ваш заказ отправлен на email")
+NotificationManager -> NotificationManager : createFactory("email")
+NotificationManager -> EmailNotificationFactory : createNotification()
+EmailNotificationFactory -> EmailNotification : new
+EmailNotificationFactory --> NotificationManager : notification
+NotificationManager -> EmailNotification : send("Ваш заказ отправлен на email")
+
+Main -> NotificationManager : sendNotification("sms", "Ваш код подтверждения отправлен по SMS")
+NotificationManager -> NotificationManager : createFactory("sms")
+NotificationManager -> SMSNotificationFactory : createNotification()
+SMSNotificationFactory -> SMSNotification : new
+SMSNotificationFactory --> NotificationManager : notification
+NotificationManager -> SMSNotification : send("Ваш код подтверждения отправлен по SMS")
+@enduml

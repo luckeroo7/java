@@ -1,0 +1,24 @@
+@startuml
+actor User
+participant Main
+participant Logger
+
+User -> Main : запуск программы
+
+Main -> Logger : getInstance()
+alt instance == null
+    Logger -> Logger : new Logger()
+    Logger -> Logger : instance = new Logger()
+end
+Logger --> Main : logger1
+
+Main -> Logger : getInstance()
+Logger --> Main : logger2
+
+Main -> Logger : getInstance()
+Logger --> Main : logger3
+
+Main -> Logger : log("Приложение запущено")
+Main -> Logger : log("Обработка данных...")
+Main -> Logger : log("Приложение завершено")
+@enduml

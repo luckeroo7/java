@@ -1,0 +1,47 @@
+@startuml
+interface Notification {
+    +send(message: String): void
+}
+
+class EmailNotification {
+    +send(message: String): void
+}
+
+class SMSNotification {
+    +send(message: String): void
+}
+
+abstract class NotificationFactory {
+    +createNotification(): Notification
+}
+
+class EmailNotificationFactory {
+    +createNotification(): Notification
+}
+
+class SMSNotificationFactory {
+    +createNotification(): Notification
+}
+
+class NotificationManager {
+    +sendNotification(type: String, message: String): void
+    -createFactory(type: String): NotificationFactory
+}
+
+class Main {
+    +main(args: String[]): void
+}
+
+Notification <|.. EmailNotification
+Notification <|.. SMSNotification
+
+NotificationFactory <|-- EmailNotificationFactory
+NotificationFactory <|-- SMSNotificationFactory
+
+EmailNotificationFactory ..> EmailNotification : creates
+SMSNotificationFactory ..> SMSNotification : creates
+
+NotificationManager ..> NotificationFactory : uses
+NotificationManager ..> Notification : uses
+Main ..> NotificationManager : uses
+@enduml

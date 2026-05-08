@@ -1,0 +1,20 @@
+@startuml
+interface Cloneable <<marker>>
+
+class Document {
+    -title: String
+    -content: String
+    -author: String
+    +Document(title: String, content: String, author: String)
+    +clone(): Document
+    +setTitle(title: String): void
+    +toString(): String
+}
+
+class Main {
+    +main(args: String[]): void
+}
+
+Cloneable <|.. Document
+Main ..> Document : creates / clones / uses
+@enduml

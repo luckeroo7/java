@@ -1,0 +1,14 @@
+@startuml
+class Logger {
+    -{static} instance: Logger
+    -Logger()
+    +{static} getInstance(): Logger
+    +log(message: String): void
+}
+
+class Main {
+    +main(args: String[]): void
+}
+
+Main ..> Logger : uses
+@enduml

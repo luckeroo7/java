@@ -1,0 +1,18 @@
+@startuml
+actor User
+participant Main
+participant "Document(original)" as Original
+participant "Document(copy)" as Copy
+
+User -> Main : запуск программы
+
+Main -> Original : new Document("Отчет 2025", "Содержание отчета...", "Иванов")
+Main -> Original : clone()
+Original --> Main : copy
+
+Main -> Copy : setTitle("Отчет 2025 (копия)")
+Main -> Original : toString()
+Original --> Main : строка оригинала
+Main -> Copy : toString()
+Copy --> Main : строка копии
+@enduml
