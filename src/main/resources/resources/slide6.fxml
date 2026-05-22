@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="16" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="logic.Slide6Controller" styleClass="root slide-root demo-card">
+    <children>
+        <Label text="Binding Playground" styleClass="label-title" wrapText="true" maxWidth="1500"/>
+        <TextField fx:id="nameField" promptText="Введите имя, и Label обновится" maxWidth="900" styleClass="demo-input"/>
+        <HBox alignment="CENTER" spacing="16">
+            <children>
+                <Label text="Масштаб" styleClass="label-content"/>
+                <Slider fx:id="sizeSlider" prefWidth="360"/>
+                <ColorPicker fx:id="accentPicker"/>
+                <Button text="Сброс" onAction="#resetDemo" styleClass="demo-button"/>
+            </children>
+        </HBox>
+        <Label fx:id="previewLabel" text="Привет, JavaFX!" styleClass="preview-label" wrapText="true" maxWidth="1300" alignment="CENTER"/>
+        <HBox alignment="CENTER" spacing="30">
+            <children>
+                <Label fx:id="countLabel" text="Символов: 0" styleClass="label-content"/>
+                <Label fx:id="scaleLabel" text="Масштаб preview: 1.0x" styleClass="label-content"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

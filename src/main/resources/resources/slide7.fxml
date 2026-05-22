@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="16"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="logic.Slide7Controller"
+      styleClass="root slide-root">
+
+    <children>
+        <Label text="Task / Service: зависает vs не зависает"
+               styleClass="label-title"
+               wrapText="true"
+               maxWidth="1500"/>
+
+        <VBox alignment="CENTER_LEFT"
+              spacing="12"
+              maxWidth="1500"
+              styleClass="content-box">
+            <children>
+                <Label text="• Плохой вариант: тяжёлая операция выполняется прямо в JavaFX Application Thread"
+                       styleClass="label-content"
+                       wrapText="true"
+                       maxWidth="1500"/>
+
+                <Label text="• Правильный вариант: тяжёлая операция выполняется в фоне через Task / Service"
+                       styleClass="label-content"
+                       wrapText="true"
+                       maxWidth="1500"/>
+
+                <Label text="• Во время правильного запуска интерфейс остаётся отзывчивым"
+                       styleClass="label-content"
+                       wrapText="true"
+                       maxWidth="1500"/>
+            </children>
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="20">
+            <children>
+                <Button fx:id="blockingButton"
+                        text="Плохой запуск: UI зависает"
+                        onAction="#startBlockingTask"
+                        styleClass="demo-button"/>
+
+                <Button fx:id="startButton"
+                        text="Правильный запуск: Task"
+                        onAction="#startBackgroundTask"
+                        styleClass="demo-button"/>
+
+                <Button fx:id="cancelButton"
+                        text="Отменить Task"
+                        onAction="#cancelTask"
+                        styleClass="demo-button"/>
+
+                <Button text="Сброс"
+                        onAction="#resetTask"
+                        styleClass="demo-button"/>
+            </children>
+        </HBox>
+
+        <ProgressBar fx:id="progressBar"
+                     progress="0"
+                     prefWidth="900"/>
+
+        <Label fx:id="statusLabel"
+               text="Нажмите плохую кнопку — UI зависнет. Нажмите правильную — работа уйдёт в фон."
+               styleClass="label-hint"
+               wrapText="true"
+               maxWidth="1400"
+               alignment="CENTER"/>
+
+        <Label fx:id="stateLabel"
+               text="Состояние Service: READY"
+               styleClass="label-content"
+               wrapText="true"
+               maxWidth="1400"
+               alignment="CENTER"/>
+
+     
+    </children>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="18" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" styleClass="root slide-root title-slide">
+    <children>
+        <Label text="Пара слов о JavaFx" styleClass="label-title" wrapText="true" maxWidth="1500"/>
+        <VBox alignment="CENTER_LEFT" spacing="12" maxWidth="1500" styleClass="content-box">
+            <children>
+                <Label text="Подготовили" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="Касимов Александр 5030102/40004" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="Хохлова Екатерина 5030102/40002" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+            </children>
+        </VBox>
+        
+    </children>
+</VBox>

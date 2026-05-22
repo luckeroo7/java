@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="18" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" styleClass="root slide-root">
+    <children>
+        <Label text="Карта модулей JavaFX" styleClass="label-title" wrapText="true" maxWidth="1500"/>
+        <GridPane hgap="16" vgap="16" maxWidth="1500">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="50"/>
+                <ColumnConstraints percentWidth="50"/>
+            </columnConstraints>
+            <children>
+                <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="module-card" spacing="8">
+                    <children><Label text="javafx.base" styleClass="label-subtitle"/><Label text="Properties, binding, observables, collections" styleClass="label-content" wrapText="true"/></children>
+                </VBox>
+                <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="module-card" spacing="8">
+                    <children><Label text="javafx.graphics" styleClass="label-subtitle"/><Label text="Stage, Scene, Node, layout, animation, CSS, concurrency" styleClass="label-content" wrapText="true"/></children>
+                </VBox>
+                <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="module-card" spacing="8">
+                    <children><Label text="javafx.controls" styleClass="label-subtitle"/><Label text="Button, ListView, TableView, charts и готовые UI-компоненты" styleClass="label-content" wrapText="true"/></children>
+                </VBox>
+                <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="module-card" spacing="8">
+                    <children><Label text="javafx.fxml" styleClass="label-subtitle"/><Label text="FXML-разметка, FXMLLoader, контроллеры и декларативный UI" styleClass="label-content" wrapText="true"/></children>
+                </VBox>
+            </children>
+        </GridPane>
+        
+    </children>
+</VBox>
