@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>TestNG:  Lifecycle-and-Annotations</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Lifecycle-and-Annotations</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 24 19:36:18 MSK 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (137 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.registerWithShortPassword()'><b>registerWithShortPassword</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Пароль < 4 символов — IAE с нужным сообщением</td>
+<td><div><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.basics.TestAttributesTest.registerWithShortPassword(TestAttributesTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace141673137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace141673137'><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.basics.TestAttributesTest.registerWithShortPassword(TestAttributesTest.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.step2_loginUser()'><b>step2_loginUser</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Затем проверяем вход</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.AnnotationLifecycleTest.testLoginWrongPassword()'><b>testLoginWrongPassword</b><br>Test class: com.example.basics.AnnotationLifecycleTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.AnnotationLifecycleTest@1a0dcaa</td></tr>
+<tr>
+<td title='com.example.basics.DependencyTest.step5_stopServer()'><b>step5_stopServer</b><br>Test class: com.example.basics.DependencyTest<br>Test method: Шаг 5 (cleanup): Останавливаем сервер в любом случае</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.DependencyTest@1460a8c0</td></tr>
+<tr>
+<td title='com.example.basics.AnnotationLifecycleTest.testServerIsRunning()'><b>testServerIsRunning</b><br>Test class: com.example.basics.AnnotationLifecycleTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.AnnotationLifecycleTest@1a0dcaa</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.repeatedLogin()'><b>repeatedLogin</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Метод вызывается 3 раза подряд</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.DependencyTest.step2_registerUser()'><b>step2_registerUser</b><br>Test class: com.example.basics.DependencyTest<br>Test method: Шаг 2: Регистрация — требует запущенного сервера</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.DependencyTest@1460a8c0</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.repeatedLogin()'><b>repeatedLogin</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Метод вызывается 3 раза подряд</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.step1_registerUser()'><b>step1_registerUser</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Сначала регистрируем пользователя</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.repeatedLogin()'><b>repeatedLogin</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Метод вызывается 3 раза подряд</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.DependencyTest.step4_performAction()'><b>step4_performAction</b><br>Test class: com.example.basics.DependencyTest<br>Test method: Шаг 4: Бизнес-операция — доступна только авторизованным</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.DependencyTest@1460a8c0</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.step3_deleteUser()'><b>step3_deleteUser</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Наконец удаляем пользователя</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.registerWithEmptyLogin()'><b>registerWithEmptyLogin</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Регистрация с пустым логином должна выбросить IllegalArgumentException</td>
+<td><div><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.basics.TestAttributesTest.registerWithEmptyLogin(TestAttributesTest.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883272502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883272502'><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.basics.TestAttributesTest.registerWithEmptyLogin(TestAttributesTest.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.AnnotationLifecycleTest.testLoginSuccess()'><b>testLoginSuccess</b><br>Test class: com.example.basics.AnnotationLifecycleTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.AnnotationLifecycleTest@1a0dcaa</td></tr>
+<tr>
+<td title='com.example.basics.TestAttributesTest.fastOperation()'><b>fastOperation</b><br>Test class: com.example.basics.TestAttributesTest<br>Test method: Быстрая операция — должна уложиться в 500 мс</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.TestAttributesTest@78047b92</td></tr>
+<tr>
+<td title='com.example.basics.DependencyTest.step1_startServer()'><b>step1_startServer</b><br>Test class: com.example.basics.DependencyTest<br>Test method: Шаг 1: Запуск сервера — базовая предпосылка для всего остального</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.DependencyTest@1460a8c0</td></tr>
+<tr>
+<td title='com.example.basics.DependencyTest.step3_loginUser()'><b>step3_loginUser</b><br>Test class: com.example.basics.DependencyTest<br>Test method: Шаг 3: Вход — требует успешной регистрации</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.DependencyTest@1460a8c0</td></tr>
+<tr>
+<td title='com.example.basics.AnnotationLifecycleTest.testUserExists()'><b>testUserExists</b><br>Test class: com.example.basics.AnnotationLifecycleTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.basics.AnnotationLifecycleTest@1a0dcaa</td></tr>
+</table><p>
+</body>
+</html>

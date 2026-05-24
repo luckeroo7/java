@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [TestNG-Demo-Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.example.listeners.CustomTestListener"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="Retry-Demo(failed)" verbose="0">
+    <classes>
+      <class name="com.example.retry.RetryDemoTest">
+        <methods>
+          <include name="flakyNetworkTest"/>
+          <include name="alwaysFailingTest"/>
+        </methods>
+      </class> <!-- com.example.retry.RetryDemoTest -->
+    </classes>
+  </test> <!-- Retry-Demo(failed) -->
+  <test thread-count="4" parallel="tests" name="Listeners-Demo(failed)" verbose="0">
+    <classes>
+      <class name="com.example.listeners.ListenerDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="failingTest"/>
+        </methods>
+      </class> <!-- com.example.listeners.ListenerDemoTest -->
+    </classes>
+  </test> <!-- Listeners-Demo(failed) -->
+  <test thread-count="4" parallel="tests" name="Groups-Demo(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.example.groups.GroupsTest">
+        <methods>
+          <include name="deleteUserAfterSmoke"/>
+        </methods>
+      </class> <!-- com.example.groups.GroupsTest -->
+    </classes>
+  </test> <!-- Groups-Demo(failed) -->
+</suite> <!-- Failed suite [TestNG-Demo-Suite] -->

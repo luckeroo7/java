@@ -1,0 +1,2511 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestNG_Demo_Suite" class="navigator-link">
+              <span class="suite-name border-failed">TestNG-Demo-Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>C:\Users\User\OneDrive\Документы\testng-demo\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestNG_Demo_Suite" class="navigator-link ">
+                    <span class="test-stats">8 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>5 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestNG_Demo_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">78 methods, 3 failed,  3 skipped,  72 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="hide-methods failed suite-TestNG_Demo_Suite"> (hide)</a> <!-- hide-methods failed suite-TestNG_Demo_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="show-methods failed suite-TestNG_Demo_Suite"> (show)</a> <!-- show-methods failed suite-TestNG_Demo_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNG_Demo_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="alwaysFailingTest">alwaysFailingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="deleteUserAfterSmoke">deleteUserAfterSmoke</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.listeners.ListenerDemoTest" class="method navigator-link" hash-for-method="failingTest">failingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNG_Demo_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="hide-methods skipped suite-TestNG_Demo_Suite"> (hide)</a> <!-- hide-methods skipped suite-TestNG_Demo_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="show-methods skipped suite-TestNG_Demo_Suite"> (show)</a> <!-- show-methods skipped suite-TestNG_Demo_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNG_Demo_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="alwaysFailingTest">alwaysFailingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="alwaysFailingTest">alwaysFailingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="flakyNetworkTest">flakyNetworkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNG_Demo_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="hide-methods passed suite-TestNG_Demo_Suite"> (hide)</a> <!-- hide-methods passed suite-TestNG_Demo_Suite -->
+                      <a href="#" panel-name="suite-TestNG_Demo_Suite" class="show-methods passed suite-TestNG_Demo_Suite"> (show)</a> <!-- show-methods passed suite-TestNG_Demo_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNG_Demo_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="assertCollectionsDemo">assertCollectionsDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="assertEqualsDemo">assertEqualsDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="assertNullDemo">assertNullDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="assertThrowsDemo">assertThrowsDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="assertTrueFalseDemo">assertTrueFalseDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="basicLoginWorks">basicLoginWorks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="fastOperation">fastOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="flakyNetworkTest">flakyNetworkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="parallelMethodA">parallelMethodA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="parallelMethodB">parallelMethodB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="parallelMethodC">parallelMethodC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="parallelMethodD">parallelMethodD</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.listeners.ListenerDemoTest" class="method navigator-link" hash-for-method="passingTest">passingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="registerWithEmptyLogin">registerWithEmptyLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="registerWithShortPassword">registerWithShortPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="repeatedLogin">repeatedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="repeatedLogin">repeatedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="repeatedLogin">repeatedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="roleCheckTest">roleCheckTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="roleCheckTest">roleCheckTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="roleCheckTest">roleCheckTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="serverIsUp">serverIsUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="slowIntegrationCheck">slowIntegrationCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="softAssertApiResponseDemo">softAssertApiResponseDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.assertions.AssertionsTest" class="method navigator-link" hash-for-method="softAssertDemo">softAssertDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.retry.RetryDemoTest" class="method navigator-link" hash-for-method="stableTest">stableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="step1_registerUser">step1_registerUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.DependencyTest" class="method navigator-link" hash-for-method="step1_startServer">step1_startServer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="step2_loginUser">step2_loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.DependencyTest" class="method navigator-link" hash-for-method="step2_registerUser">step2_registerUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.TestAttributesTest" class="method navigator-link" hash-for-method="step3_deleteUser">step3_deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.DependencyTest" class="method navigator-link" hash-for-method="step3_loginUser">step3_loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.DependencyTest" class="method navigator-link" hash-for-method="step4_performAction">step4_performAction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.DependencyTest" class="method navigator-link" hash-for-method="step5_stopServer">step5_stopServer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="stressTest">stressTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testLoginScenarios(alice, pass1234, true)">testLoginScenarios(alice, pass1234, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testLoginScenarios(unknown, pass1234, false)">testLoginScenarios(unknown, pass1234, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testLoginScenarios(alice, wrongPass, false)">testLoginScenarios(alice, wrongPass, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testLoginScenarios(alice, , false)">testLoginScenarios(alice, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.AnnotationLifecycleTest" class="method navigator-link" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.AnnotationLifecycleTest" class="method navigator-link" hash-for-method="testLoginWrongPassword">testLoginWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testParallelRegistration(p_user2, pass0002)">testParallelRegistration(p_user2, pass0002)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testParallelRegistration(p_user1, pass0001)">testParallelRegistration(p_user1, pass0001)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testParallelRegistration(p_user3, pass0003)">testParallelRegistration(p_user3, pass0003)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterInvalidUser(  , pass1234)">testRegisterInvalidUser(  , pass1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterInvalidUser(valid, 123)">testRegisterInvalidUser(valid, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterInvalidUser(, pass1234)">testRegisterInvalidUser(, pass1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterInvalidUser(valid, null)">testRegisterInvalidUser(valid, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterValidUser(charlie, Ch@rlie99)">testRegisterValidUser(charlie, Ch@rlie99)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterValidUser(diana, diana2024)">testRegisterValidUser(diana, diana2024)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterValidUser(bob, secureP@ss)">testRegisterValidUser(bob, secureP@ss)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.dataprovider.DataProviderTest" class="method navigator-link" hash-for-method="testRegisterValidUser(alice, pass1234)">testRegisterValidUser(alice, pass1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.AnnotationLifecycleTest" class="method navigator-link" hash-for-method="testServerIsRunning">testServerIsRunning</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.basics.AnnotationLifecycleTest" class="method navigator-link" hash-for-method="testUserExists">testUserExists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.parallel.ParallelMethodsTest" class="method navigator-link" hash-for-method="threadLocalDemo">threadLocalDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="unknownUserRejected">unknownUserRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="userCountIncrementsOnRegister">userCountIncrementsOnRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="userExistsTest">userExistsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="userExistsTest">userExistsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="userExistsTest">userExistsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.groups.GroupsTest" class="method navigator-link" hash-for-method="wrongPasswordRejected">wrongPasswordRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="wrongPasswordTest">wrongPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="wrongPasswordTest">wrongPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Demo_Suite" title="com.example.factory.UserRoleTest" class="method navigator-link" hash-for-method="wrongPasswordTest">wrongPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNG_Demo_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNG_Demo_Suite" class="panel TestNG_Demo_Suite">
+          <div class="suite-TestNG_Demo_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.listeners.ListenerDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="failingTest">
+                  </a> <!-- failingTest -->
+                  <span class="method-name">failingTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Намеренный провал: счётчик не равен 999 expected [999] but found [0]
+	at com.example.listeners.ListenerDemoTest.failingTest(ListenerDemoTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Этот тест намеренно падает — listener выведет ПРОВАЛ)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-failed -->
+          <div class="suite-TestNG_Demo_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.groups.GroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUserAfterSmoke">
+                  </a> <!-- deleteUserAfterSmoke -->
+                  <span class="method-name">deleteUserAfterSmoke</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Сервер не запущен
+	at com.example.UserService.register(UserService.java:38)
+	at com.example.groups.GroupsTest.deleteUserAfterSmoke(GroupsTest.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Этот тест запустится только если все smoke-тесты прошли)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-failed -->
+          <div class="suite-TestNG_Demo_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.retry.RetryDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alwaysFailingTest">
+                  </a> <!-- alwaysFailingTest -->
+                  <span class="method-name">alwaysFailingTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Постоянно падающий тест: retry не спасёт, но мы увидим все попытки)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-failed -->
+          <div class="suite-TestNG_Demo_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.example.retry.RetryDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="alwaysFailingTest">
+                  </a> <!-- alwaysFailingTest -->
+                  <span class="method-name">alwaysFailingTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Постоянно падающий тест: retry не спасёт, но мы увидим все попытки)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alwaysFailingTest">
+                  </a> <!-- alwaysFailingTest -->
+                  <span class="method-name">alwaysFailingTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Постоянно падающий тест: retry не спасёт, но мы увидим все попытки)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flakyNetworkTest">
+                  </a> <!-- flakyNetworkTest -->
+                  <span class="method-name">flakyNetworkTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Имитация нестабильного сетевого сбоя на попытке #1
+	at com.example.retry.RetryDemoTest.flakyNetworkTest(RetryDemoTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Нестабильный тест: упадёт при первом вызове, пройдёт при втором)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-skipped -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.basics.DependencyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="step1_startServer">
+                  </a> <!-- step1_startServer -->
+                  <span class="method-name">step1_startServer</span>
+                  <em>
+(Шаг 1: Запуск сервера — базовая предпосылка для всего остального)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_registerUser">
+                  </a> <!-- step2_registerUser -->
+                  <span class="method-name">step2_registerUser</span>
+                  <em>
+(Шаг 2: Регистрация — требует запущенного сервера)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_loginUser">
+                  </a> <!-- step3_loginUser -->
+                  <span class="method-name">step3_loginUser</span>
+                  <em>
+(Шаг 3: Вход — требует успешной регистрации)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step4_performAction">
+                  </a> <!-- step4_performAction -->
+                  <span class="method-name">step4_performAction</span>
+                  <em>
+(Шаг 4: Бизнес-операция — доступна только авторизованным)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step5_stopServer">
+                  </a> <!-- step5_stopServer -->
+                  <span class="method-name">step5_stopServer</span>
+                  <em>
+(Шаг 5 (cleanup): Останавливаем сервер в любом случае)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.dataprovider.DataProviderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginScenarios(alice, pass1234, true)">
+                  </a> <!-- testLoginScenarios(alice, pass1234, true) -->
+                  <span class="method-name">testLoginScenarios</span>
+                  <span class="parameters">(alice,pass1234,true)</span>
+                  <em>
+(Проверяем сценарии входа с разными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginScenarios(unknown, pass1234, false)">
+                  </a> <!-- testLoginScenarios(unknown, pass1234, false) -->
+                  <span class="method-name">testLoginScenarios</span>
+                  <span class="parameters">(unknown,pass1234,false)</span>
+                  <em>
+(Проверяем сценарии входа с разными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginScenarios(alice, wrongPass, false)">
+                  </a> <!-- testLoginScenarios(alice, wrongPass, false) -->
+                  <span class="method-name">testLoginScenarios</span>
+                  <span class="parameters">(alice,wrongPass,false)</span>
+                  <em>
+(Проверяем сценарии входа с разными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginScenarios(alice, , false)">
+                  </a> <!-- testLoginScenarios(alice, , false) -->
+                  <span class="method-name">testLoginScenarios</span>
+                  <span class="parameters">(alice,,false)</span>
+                  <em>
+(Проверяем сценарии входа с разными данными)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParallelRegistration(p_user2, pass0002)">
+                  </a> <!-- testParallelRegistration(p_user2, pass0002) -->
+                  <span class="method-name">testParallelRegistration</span>
+                  <span class="parameters">(p_user2,pass0002)</span>
+                  <em>
+(Параллельная регистрация — каждая строка в своём потоке)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParallelRegistration(p_user1, pass0001)">
+                  </a> <!-- testParallelRegistration(p_user1, pass0001) -->
+                  <span class="method-name">testParallelRegistration</span>
+                  <span class="parameters">(p_user1,pass0001)</span>
+                  <em>
+(Параллельная регистрация — каждая строка в своём потоке)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParallelRegistration(p_user3, pass0003)">
+                  </a> <!-- testParallelRegistration(p_user3, pass0003) -->
+                  <span class="method-name">testParallelRegistration</span>
+                  <span class="parameters">(p_user3,pass0003)</span>
+                  <em>
+(Параллельная регистрация — каждая строка в своём потоке)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterInvalidUser(  , pass1234)">
+                  </a> <!-- testRegisterInvalidUser(  , pass1234) -->
+                  <span class="method-name">testRegisterInvalidUser</span>
+                  <span class="parameters">(  ,pass1234)</span>
+                  <em>
+(Регистрация с невалидными данными должна выбрасывать исключение)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterInvalidUser(valid, 123)">
+                  </a> <!-- testRegisterInvalidUser(valid, 123) -->
+                  <span class="method-name">testRegisterInvalidUser</span>
+                  <span class="parameters">(valid,123)</span>
+                  <em>
+(Регистрация с невалидными данными должна выбрасывать исключение)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterInvalidUser(, pass1234)">
+                  </a> <!-- testRegisterInvalidUser(, pass1234) -->
+                  <span class="method-name">testRegisterInvalidUser</span>
+                  <span class="parameters">(,pass1234)</span>
+                  <em>
+(Регистрация с невалидными данными должна выбрасывать исключение)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterInvalidUser(valid, null)">
+                  </a> <!-- testRegisterInvalidUser(valid, null) -->
+                  <span class="method-name">testRegisterInvalidUser</span>
+                  <span class="parameters">(valid,null)</span>
+                  <em>
+(Регистрация с невалидными данными должна выбрасывать исключение)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterValidUser(charlie, Ch@rlie99)">
+                  </a> <!-- testRegisterValidUser(charlie, Ch@rlie99) -->
+                  <span class="method-name">testRegisterValidUser</span>
+                  <span class="parameters">(charlie,Ch@rlie99)</span>
+                  <em>
+(Регистрация с валидными данными должна успешно создавать пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterValidUser(diana, diana2024)">
+                  </a> <!-- testRegisterValidUser(diana, diana2024) -->
+                  <span class="method-name">testRegisterValidUser</span>
+                  <span class="parameters">(diana,diana2024)</span>
+                  <em>
+(Регистрация с валидными данными должна успешно создавать пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterValidUser(bob, secureP@ss)">
+                  </a> <!-- testRegisterValidUser(bob, secureP@ss) -->
+                  <span class="method-name">testRegisterValidUser</span>
+                  <span class="parameters">(bob,secureP@ss)</span>
+                  <em>
+(Регистрация с валидными данными должна успешно создавать пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterValidUser(alice, pass1234)">
+                  </a> <!-- testRegisterValidUser(alice, pass1234) -->
+                  <span class="method-name">testRegisterValidUser</span>
+                  <span class="parameters">(alice,pass1234)</span>
+                  <em>
+(Регистрация с валидными данными должна успешно создавать пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.basics.TestAttributesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fastOperation">
+                  </a> <!-- fastOperation -->
+                  <span class="method-name">fastOperation</span>
+                  <em>
+(Быстрая операция — должна уложиться в 500 мс)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmptyLogin">
+                  </a> <!-- registerWithEmptyLogin -->
+                  <span class="method-name">registerWithEmptyLogin</span>
+                  <em>
+(Регистрация с пустым логином должна выбросить IllegalArgumentException)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithShortPassword">
+                  </a> <!-- registerWithShortPassword -->
+                  <span class="method-name">registerWithShortPassword</span>
+                  <em>
+(Пароль < 4 символов — IAE с нужным сообщением)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeatedLogin">
+                  </a> <!-- repeatedLogin -->
+                  <span class="method-name">repeatedLogin</span>
+                  <em>
+(Метод вызывается 3 раза подряд)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeatedLogin">
+                  </a> <!-- repeatedLogin -->
+                  <span class="method-name">repeatedLogin</span>
+                  <em>
+(Метод вызывается 3 раза подряд)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="repeatedLogin">
+                  </a> <!-- repeatedLogin -->
+                  <span class="method-name">repeatedLogin</span>
+                  <em>
+(Метод вызывается 3 раза подряд)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step1_registerUser">
+                  </a> <!-- step1_registerUser -->
+                  <span class="method-name">step1_registerUser</span>
+                  <em>
+(Сначала регистрируем пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step2_loginUser">
+                  </a> <!-- step2_loginUser -->
+                  <span class="method-name">step2_loginUser</span>
+                  <em>
+(Затем проверяем вход)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="step3_deleteUser">
+                  </a> <!-- step3_deleteUser -->
+                  <span class="method-name">step3_deleteUser</span>
+                  <em>
+(Наконец удаляем пользователя)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.assertions.AssertionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertCollectionsDemo">
+                  </a> <!-- assertCollectionsDemo -->
+                  <span class="method-name">assertCollectionsDemo</span>
+                  <em>
+(Assert для коллекций: assertEquals, assertEqualsNoOrder)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertEqualsDemo">
+                  </a> <!-- assertEqualsDemo -->
+                  <span class="method-name">assertEqualsDemo</span>
+                  <em>
+(Assert.assertEquals — сравнение значений)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertNullDemo">
+                  </a> <!-- assertNullDemo -->
+                  <span class="method-name">assertNullDemo</span>
+                  <em>
+(Assert.assertNotNull / assertNull)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertThrowsDemo">
+                  </a> <!-- assertThrowsDemo -->
+                  <span class="method-name">assertThrowsDemo</span>
+                  <em>
+(Assert.assertThrows — проверка исключения inline)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertTrueFalseDemo">
+                  </a> <!-- assertTrueFalseDemo -->
+                  <span class="method-name">assertTrueFalseDemo</span>
+                  <em>
+(Assert.assertTrue / assertFalse)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="softAssertApiResponseDemo">
+                  </a> <!-- softAssertApiResponseDemo -->
+                  <span class="method-name">softAssertApiResponseDemo</span>
+                  <em>
+(SoftAssert: проверка нескольких полей объекта за раз)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="softAssertDemo">
+                  </a> <!-- softAssertDemo -->
+                  <span class="method-name">softAssertDemo</span>
+                  <em>
+(SoftAssert: все ошибки собираются и выдаются вместе)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.parallel.ParallelMethodsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parallelMethodA">
+                  </a> <!-- parallelMethodA -->
+                  <span class="method-name">parallelMethodA</span>
+                  <em>
+(Параллельный метод A)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parallelMethodB">
+                  </a> <!-- parallelMethodB -->
+                  <span class="method-name">parallelMethodB</span>
+                  <em>
+(Параллельный метод B)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parallelMethodC">
+                  </a> <!-- parallelMethodC -->
+                  <span class="method-name">parallelMethodC</span>
+                  <em>
+(Параллельный метод C)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parallelMethodD">
+                  </a> <!-- parallelMethodD -->
+                  <span class="method-name">parallelMethodD</span>
+                  <em>
+(Параллельный метод D)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stressTest">
+                  </a> <!-- stressTest -->
+                  <span class="method-name">stressTest</span>
+                  <em>
+(6 вызовов метода в пуле из 3 потоков)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="threadLocalDemo">
+                  </a> <!-- threadLocalDemo -->
+                  <span class="method-name">threadLocalDemo</span>
+                  <em>
+(Демонстрация ThreadLocal при параллельном запуске)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.listeners.ListenerDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="passingTest">
+                  </a> <!-- passingTest -->
+                  <span class="method-name">passingTest</span>
+                  <em>
+(Успешный тест — listener выведет УСПЕХ)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.groups.GroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basicLoginWorks">
+                  </a> <!-- basicLoginWorks -->
+                  <span class="method-name">basicLoginWorks</span>
+                  <em>
+(Базовая проверка: успешный вход)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="serverIsUp">
+                  </a> <!-- serverIsUp -->
+                  <span class="method-name">serverIsUp</span>
+                  <em>
+(Базовая проверка: сервер запущен)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="slowIntegrationCheck">
+                  </a> <!-- slowIntegrationCheck -->
+                  <span class="method-name">slowIntegrationCheck</span>
+                  <em>
+(Имитация долгой операции (500 мс))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unknownUserRejected">
+                  </a> <!-- unknownUserRejected -->
+                  <span class="method-name">unknownUserRejected</span>
+                  <em>
+(Регрессия: несуществующий пользователь не проходит вход)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCountIncrementsOnRegister">
+                  </a> <!-- userCountIncrementsOnRegister -->
+                  <span class="method-name">userCountIncrementsOnRegister</span>
+                  <em>
+(Регрессия: счётчик пользователей растёт при регистрации)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordRejected">
+                  </a> <!-- wrongPasswordRejected -->
+                  <span class="method-name">wrongPasswordRejected</span>
+                  <em>
+(Регрессия: неверный пароль отклоняется)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.retry.RetryDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="flakyNetworkTest">
+                  </a> <!-- flakyNetworkTest -->
+                  <span class="method-name">flakyNetworkTest</span>
+                  <em>
+(Нестабильный тест: упадёт при первом вызове, пройдёт при втором)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="stableTest">
+                  </a> <!-- stableTest -->
+                  <span class="method-name">stableTest</span>
+                  <em>
+(Стабильный тест без retry — всегда проходит)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.basics.AnnotationLifecycleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWrongPassword">
+                  </a> <!-- testLoginWrongPassword -->
+                  <span class="method-name">testLoginWrongPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testServerIsRunning">
+                  </a> <!-- testServerIsRunning -->
+                  <span class="method-name">testServerIsRunning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserExists">
+                  </a> <!-- testUserExists -->
+                  <span class="method-name">testUserExists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+          <div class="suite-TestNG_Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.factory.UserRoleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(Пользователь должен успешно войти в систему)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(Пользователь должен успешно войти в систему)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(Пользователь должен успешно войти в систему)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roleCheckTest">
+                  </a> <!-- roleCheckTest -->
+                  <span class="method-name">roleCheckTest</span>
+                  <em>
+(Роль проверяется корректно (имитация))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roleCheckTest">
+                  </a> <!-- roleCheckTest -->
+                  <span class="method-name">roleCheckTest</span>
+                  <em>
+(Роль проверяется корректно (имитация))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roleCheckTest">
+                  </a> <!-- roleCheckTest -->
+                  <span class="method-name">roleCheckTest</span>
+                  <em>
+(Роль проверяется корректно (имитация))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userExistsTest">
+                  </a> <!-- userExistsTest -->
+                  <span class="method-name">userExistsTest</span>
+                  <em>
+(Пользователь должен существовать после регистрации)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userExistsTest">
+                  </a> <!-- userExistsTest -->
+                  <span class="method-name">userExistsTest</span>
+                  <em>
+(Пользователь должен существовать после регистрации)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userExistsTest">
+                  </a> <!-- userExistsTest -->
+                  <span class="method-name">userExistsTest</span>
+                  <em>
+(Пользователь должен существовать после регистрации)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordTest">
+                  </a> <!-- wrongPasswordTest -->
+                  <span class="method-name">wrongPasswordTest</span>
+                  <em>
+(Вход с неверным паролем должен быть отклонён)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordTest">
+                  </a> <!-- wrongPasswordTest -->
+                  <span class="method-name">wrongPasswordTest</span>
+                  <em>
+(Вход с неверным паролем должен быть отклонён)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordTest">
+                  </a> <!-- wrongPasswordTest -->
+                  <span class="method-name">wrongPasswordTest</span>
+                  <em>
+(Вход с неверным паролем должен быть отклонён)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Demo_Suite-class-passed -->
+        </div> <!-- panel TestNG_Demo_Suite -->
+        <div panel-name="test-xml-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\User\OneDrive\Документы\testng-demo\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;TestNG-Demo-Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.example.listeners.CustomTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Lifecycle-and-Annotations&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.basics.AnnotationLifecycleTest&quot;/&gt;
+      &lt;class name=&quot;com.example.basics.TestAttributesTest&quot;/&gt;
+      &lt;class name=&quot;com.example.basics.DependencyTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Lifecycle-and-Annotations --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;DataProvider-Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.dataprovider.DataProviderTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DataProvider-Tests --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Groups-Demo&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.groups.GroupsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Groups-Demo --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Parallel-Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.parallel.ParallelMethodsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel-Tests --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Assertions-Demo&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.assertions.AssertionsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Assertions-Demo --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Factory-Demo&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.factory.UserRoleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Factory-Demo --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Retry-Demo&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.retry.RetryDemoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Retry-Demo --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Listeners-Demo&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.listeners.ListenerDemoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Listeners-Demo --&gt;
+&lt;/suite&gt; &lt;!-- TestNG-Demo-Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNG-Demo-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Lifecycle-and-Annotations (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">DataProvider-Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Groups-Demo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Parallel-Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Assertions-Demo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Factory-Demo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Retry-Demo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Listeners-Demo (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNG-Demo-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">auth</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">basicLoginWorks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unknownUserRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">wrongPasswordRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">fast</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">basicLoginWorks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">serverIsUp</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">userCountIncrementsOnRegister</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteUserAfterSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">slowIntegrationCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">unknownUserRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">userCountIncrementsOnRegister</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">wrongPasswordRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">slow</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">slowIntegrationCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">basicLoginWorks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">serverIsUp</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNG-Demo-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNG_Demo_Suite');
+function tableData_TestNG_Demo_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(78);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'slowIntegrationCheck')
+data.setCell(0, 2, 'com.example.groups.GroupsTest')
+data.setCell(0, 3, 501);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'parallelMethodA')
+data.setCell(1, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(1, 3, 105);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'parallelMethodD')
+data.setCell(2, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(2, 3, 103);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'parallelMethodC')
+data.setCell(3, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(3, 3, 102);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'parallelMethodB')
+data.setCell(4, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(4, 3, 101);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'fastOperation')
+data.setCell(5, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(5, 3, 62);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLoginScenarios')
+data.setCell(6, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(6, 3, 16);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testRegisterValidUser')
+data.setCell(7, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(7, 3, 10);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'basicLoginWorks')
+data.setCell(8, 2, 'com.example.groups.GroupsTest')
+data.setCell(8, 3, 7);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRegisterValidUser')
+data.setCell(9, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(9, 3, 5);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'assertThrowsDemo')
+data.setCell(10, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(10, 3, 5);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'softAssertApiResponseDemo')
+data.setCell(11, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'wrongPasswordTest')
+data.setCell(12, 2, 'com.example.factory.UserRoleTest')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'failingTest')
+data.setCell(13, 2, 'com.example.listeners.ListenerDemoTest')
+data.setCell(13, 3, 4);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'stressTest')
+data.setCell(14, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(14, 3, 4);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'stressTest')
+data.setCell(15, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(15, 3, 4);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'stressTest')
+data.setCell(16, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(16, 3, 4);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testParallelRegistration')
+data.setCell(17, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(17, 3, 3);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testRegisterInvalidUser')
+data.setCell(18, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(18, 3, 3);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testParallelRegistration')
+data.setCell(19, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(19, 3, 3);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'assertCollectionsDemo')
+data.setCell(20, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(20, 3, 3);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'loginTest')
+data.setCell(21, 2, 'com.example.factory.UserRoleTest')
+data.setCell(21, 3, 3);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testRegisterInvalidUser')
+data.setCell(22, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(22, 3, 2);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'softAssertDemo')
+data.setCell(23, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'userCountIncrementsOnRegister')
+data.setCell(24, 2, 'com.example.groups.GroupsTest')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'step2_loginUser')
+data.setCell(25, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(25, 3, 1);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'step5_stopServer')
+data.setCell(26, 2, 'com.example.basics.DependencyTest')
+data.setCell(26, 3, 1);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'step2_registerUser')
+data.setCell(27, 2, 'com.example.basics.DependencyTest')
+data.setCell(27, 3, 1);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'registerWithEmptyLogin')
+data.setCell(28, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testUserExists')
+data.setCell(29, 2, 'com.example.basics.AnnotationLifecycleTest')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testRegisterInvalidUser')
+data.setCell(30, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testLoginScenarios')
+data.setCell(31, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testRegisterValidUser')
+data.setCell(32, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testParallelRegistration')
+data.setCell(33, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testRegisterValidUser')
+data.setCell(34, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testLoginScenarios')
+data.setCell(35, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testRegisterInvalidUser')
+data.setCell(36, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testLoginScenarios')
+data.setCell(37, 2, 'com.example.dataprovider.DataProviderTest')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'assertTrueFalseDemo')
+data.setCell(38, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'assertNullDemo')
+data.setCell(39, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'assertEqualsDemo')
+data.setCell(40, 2, 'com.example.assertions.AssertionsTest')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'userExistsTest')
+data.setCell(41, 2, 'com.example.factory.UserRoleTest')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'userExistsTest')
+data.setCell(42, 2, 'com.example.factory.UserRoleTest')
+data.setCell(42, 3, 1);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'userExistsTest')
+data.setCell(43, 2, 'com.example.factory.UserRoleTest')
+data.setCell(43, 3, 1);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'wrongPasswordTest')
+data.setCell(44, 2, 'com.example.factory.UserRoleTest')
+data.setCell(44, 3, 1);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'roleCheckTest')
+data.setCell(45, 2, 'com.example.factory.UserRoleTest')
+data.setCell(45, 3, 1);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'wrongPasswordTest')
+data.setCell(46, 2, 'com.example.factory.UserRoleTest')
+data.setCell(46, 3, 1);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'flakyNetworkTest')
+data.setCell(47, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(47, 3, 1);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'alwaysFailingTest')
+data.setCell(48, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(48, 3, 1);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'passingTest')
+data.setCell(49, 2, 'com.example.listeners.ListenerDemoTest')
+data.setCell(49, 3, 1);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'stressTest')
+data.setCell(50, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(50, 3, 1);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'threadLocalDemo')
+data.setCell(51, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(51, 3, 1);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'unknownUserRejected')
+data.setCell(52, 2, 'com.example.groups.GroupsTest')
+data.setCell(52, 3, 1);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'serverIsUp')
+data.setCell(53, 2, 'com.example.groups.GroupsTest')
+data.setCell(53, 3, 1);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'deleteUserAfterSmoke')
+data.setCell(54, 2, 'com.example.groups.GroupsTest')
+data.setCell(54, 3, 1);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'registerWithShortPassword')
+data.setCell(55, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testLoginWrongPassword')
+data.setCell(56, 2, 'com.example.basics.AnnotationLifecycleTest')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testServerIsRunning')
+data.setCell(57, 2, 'com.example.basics.AnnotationLifecycleTest')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'repeatedLogin')
+data.setCell(58, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'repeatedLogin')
+data.setCell(59, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'step1_registerUser')
+data.setCell(60, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'repeatedLogin')
+data.setCell(61, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'step4_performAction')
+data.setCell(62, 2, 'com.example.basics.DependencyTest')
+data.setCell(62, 3, 0);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'step3_deleteUser')
+data.setCell(63, 2, 'com.example.basics.TestAttributesTest')
+data.setCell(63, 3, 0);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testLoginSuccess')
+data.setCell(64, 2, 'com.example.basics.AnnotationLifecycleTest')
+data.setCell(64, 3, 0);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'step1_startServer')
+data.setCell(65, 2, 'com.example.basics.DependencyTest')
+data.setCell(65, 3, 0);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'step3_loginUser')
+data.setCell(66, 2, 'com.example.basics.DependencyTest')
+data.setCell(66, 3, 0);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'roleCheckTest')
+data.setCell(67, 2, 'com.example.factory.UserRoleTest')
+data.setCell(67, 3, 0);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'roleCheckTest')
+data.setCell(68, 2, 'com.example.factory.UserRoleTest')
+data.setCell(68, 3, 0);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'loginTest')
+data.setCell(69, 2, 'com.example.factory.UserRoleTest')
+data.setCell(69, 3, 0);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'loginTest')
+data.setCell(70, 2, 'com.example.factory.UserRoleTest')
+data.setCell(70, 3, 0);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'flakyNetworkTest')
+data.setCell(71, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(71, 3, 0);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'stableTest')
+data.setCell(72, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(72, 3, 0);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'alwaysFailingTest')
+data.setCell(73, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(73, 3, 0);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'alwaysFailingTest')
+data.setCell(74, 2, 'com.example.retry.RetryDemoTest')
+data.setCell(74, 3, 0);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'stressTest')
+data.setCell(75, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(75, 3, 0);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'stressTest')
+data.setCell(76, 2, 'com.example.parallel.ParallelMethodsTest')
+data.setCell(76, 3, 0);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'wrongPasswordRejected')
+data.setCell(77, 2, 'com.example.groups.GroupsTest')
+data.setCell(77, 3, 0);
+window.suiteTableData['TestNG_Demo_Suite']= { tableData: data, tableDiv: 'times-div-TestNG_Demo_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 589 ms</span>
+              <div id="times-div-TestNG_Demo_Suite">
+              </div> <!-- times-div-TestNG_Demo_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNG-Demo-Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.basics.TestAttributesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">disabledTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.listeners.ListenerDemoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">skippedTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNG_Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.AnnotationLifecycleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.TestAttributesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.TestAttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fastOperation</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRegisterValidUser(alice, pass1234)</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.parallel.ParallelMethodsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parallelMethodA</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.groups.GroupsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">basicLoginWorks</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testRegisterValidUser(bob, secureP@ss)</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterValidUser(charlie, Ch@rlie99)</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterValidUser(diana, diana2024)</span>
+                <span class="method-start">82 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.groups.GroupsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">serverIsUp</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setUpGroups</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">slowIntegrationCheck</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testParallelRegistration(p_user2, pass0002)</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParallelRegistration(p_user1, pass0001)</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testParallelRegistration(p_user3, pass0003)</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterInvalidUser(, pass1234)</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterInvalidUser(  , pass1234)</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterInvalidUser(valid, 123)</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterInvalidUser(valid, null)</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.TestAttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerWithEmptyLogin</span>
+                <span class="method-start">123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithShortPassword</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">repeatedLogin</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">repeatedLogin</span>
+                <span class="method-start">129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">repeatedLogin</span>
+                <span class="method-start">130 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.AnnotationLifecycleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginWrongPassword</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testServerIsRunning</span>
+                <span class="method-start">139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">141 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">142 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUserExists</span>
+                <span class="method-start">142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">144 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.TestAttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step1_registerUser</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginScenarios(alice, pass1234, true)</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.DependencyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initService</span>
+                <span class="method-start">147 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">step1_startServer</span>
+                <span class="method-start">148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step2_registerUser</span>
+                <span class="method-start">151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_loginUser</span>
+                <span class="method-start">154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step4_performAction</span>
+                <span class="method-start">156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step5_stopServer</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.TestAttributesTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">step2_loginUser</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">step3_deleteUser</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginScenarios(alice, wrongPass, false)</span>
+                <span class="method-start">162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginScenarios(alice, , false)</span>
+                <span class="method-start">164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.parallel.ParallelMethodsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parallelMethodB</span>
+                <span class="method-start">164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.dataprovider.DataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLoginScenarios(unknown, pass1234, false)</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">166 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.assertions.AssertionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">assertCollectionsDemo</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertEqualsDemo</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertNullDemo</span>
+                <span class="method-start">237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertThrowsDemo</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assertTrueFalseDemo</span>
+                <span class="method-start">245 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">246 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.assertions.AssertionsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">softAssertApiResponseDemo</span>
+                <span class="method-start">247 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.assertions.AssertionsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">softAssertDemo</span>
+                <span class="method-start">252 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">253 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.assertions.AssertionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">254 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">roleCheckTest</span>
+                <span class="method-start">260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">roleCheckTest</span>
+                <span class="method-start">262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">roleCheckTest</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userExistsTest</span>
+                <span class="method-start">264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userExistsTest</span>
+                <span class="method-start">265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userExistsTest</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.parallel.ParallelMethodsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parallelMethodC</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordTest</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.retry.RetryDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">alwaysFailingTest</span>
+                <span class="method-start">267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">alwaysFailingTest</span>
+                <span class="method-start">268 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">alwaysFailingTest</span>
+                <span class="method-start">269 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.retry.RetryDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">flakyNetworkTest</span>
+                <span class="method-start">273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flakyNetworkTest</span>
+                <span class="method-start">274 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordTest</span>
+                <span class="method-start">276 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.retry.RetryDemoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">stableTest</span>
+                <span class="method-start">276 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.factory.UserRoleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">277 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordTest</span>
+                <span class="method-start">278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">279 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.listeners.ListenerDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">294 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">failingTest</span>
+                <span class="method-start">295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">passingTest</span>
+                <span class="method-start">301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">302 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.parallel.ParallelMethodsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">parallelMethodD</span>
+                <span class="method-start">372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">490 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">stressTest</span>
+                <span class="method-start">492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">threadLocalDemo</span>
+                <span class="method-start">505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.groups.GroupsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">unknownUserRejected</span>
+                <span class="method-start">600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userCountIncrementsOnRegister</span>
+                <span class="method-start">603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordRejected</span>
+                <span class="method-start">607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tearDownGroups</span>
+                <span class="method-start">608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteUserAfterSmoke</span>
+                <span class="method-start">613 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.basics.AnnotationLifecycleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">625 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
