@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="logic.MainController"
+            stylesheets="@slideStyle.css"
+            styleClass="deck-root">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="18" styleClass="deck-topbar">
+            <children>
+                <Label text="JavaFX demo deck" styleClass="chrome-title"/>
+                <Label fx:id="topicLabel" text="Старт" styleClass="chrome-topic"/>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane fx:id="contentPane" styleClass="slide-host"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="8" styleClass="deck-bottombar">
+            <children>
+                <ProgressBar fx:id="deckProgress" progress="0" maxWidth="Infinity"/>
+                <HBox alignment="CENTER_LEFT" spacing="18">
+                    <children>
+                        <Label fx:id="slideLabel" text="1 / 12" styleClass="chrome-counter"/>
+                        <Label text="PageUp/PageDown — навигация F11 — fullscreen"
+                               styleClass="chrome-help"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>

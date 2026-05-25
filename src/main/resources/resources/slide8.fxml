@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="16" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="logic.Slide8Controller" styleClass="root slide-root">
+    <children>
+        <Label text="ObservableList, ListView и TableView" styleClass="label-title" wrapText="true" maxWidth="1500"/>
+        <HBox alignment="CENTER" spacing="14">
+            <children>
+                <TextField fx:id="inputField" promptText="Добавьте тему прямо во время доклада" maxWidth="520" styleClass="demo-input"/>
+                <Button text="Добавить" onAction="#addTopic" styleClass="demo-button"/>
+                <Button text="Удалить выбранное" onAction="#removeSelected" styleClass="demo-button"/>
+                <Button text="Сброс" onAction="#resetDemo" styleClass="demo-button"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="20" maxWidth="1500">
+            <children>
+                <ListView fx:id="topicList" prefWidth="380" prefHeight="300"/>
+                <TableView fx:id="featureTable" prefWidth="760" prefHeight="300">
+                    <columns>
+                        <TableColumn fx:id="featureColumn" text="Компонент" prefWidth="240"/>
+                        <TableColumn fx:id="reasonColumn" text="Что демонстрирует" prefWidth="520"/>
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <Label fx:id="countLabel" text="Тем в списке: 0" styleClass="label-hint" wrapText="true" maxWidth="1400" alignment="CENTER"/>
+    </children>
+</VBox>

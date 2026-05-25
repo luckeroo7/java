@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="18" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" styleClass="root slide-root title-slide">
+    <children>
+        <Label text="Итог" styleClass="label-title" wrapText="true" maxWidth="1500"/>
+        <VBox alignment="CENTER_LEFT" spacing="12" maxWidth="1500" styleClass="content-box">
+            <children>
+                <Label text="• Scene Graph даёт понятную модель интерфейса" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="• FXML + CSS + Controller разделяют структуру, стиль и логику" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="• Properties, binding и ObservableList делают UI живым" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="• Task / Service сохраняют отзывчивость" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+                <Label text="• Effects, Timeline и живые Nodes превращают демонстрацию в интерактивный интерфейс" styleClass="label-content" wrapText="true" maxWidth="1500"/>
+            </children>
+        </VBox>
+    </children>
+</VBox>
