@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="3" total="81" passed="72" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-24T19:36:18 MSK" name="TestNG-Demo-Suite" finished-at="2026-05-24T19:36:18 MSK" duration-ms="590">
+    <groups>
+      <group name="fast">
+        <method signature="GroupsTest.basicLoginWorks()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="basicLoginWorks" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.serverIsUp()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="serverIsUp" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.userCountIncrementsOnRegister()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="userCountIncrementsOnRegister" class="com.example.groups.GroupsTest"/>
+      </group> <!-- fast -->
+      <group name="slow">
+        <method signature="GroupsTest.slowIntegrationCheck()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="slowIntegrationCheck" class="com.example.groups.GroupsTest"/>
+      </group> <!-- slow -->
+      <group name="auth">
+        <method signature="GroupsTest.basicLoginWorks()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="basicLoginWorks" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.unknownUserRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="unknownUserRejected" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.wrongPasswordRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="wrongPasswordRejected" class="com.example.groups.GroupsTest"/>
+      </group> <!-- auth -->
+      <group name="regression">
+        <method signature="GroupsTest.deleteUserAfterSmoke()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="deleteUserAfterSmoke" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.slowIntegrationCheck()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="slowIntegrationCheck" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.unknownUserRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="unknownUserRejected" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.userCountIncrementsOnRegister()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="userCountIncrementsOnRegister" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.wrongPasswordRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="wrongPasswordRejected" class="com.example.groups.GroupsTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GroupsTest.basicLoginWorks()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="basicLoginWorks" class="com.example.groups.GroupsTest"/>
+        <method signature="GroupsTest.serverIsUp()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" name="serverIsUp" class="com.example.groups.GroupsTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-05-24T19:36:18 MSK" name="Lifecycle-and-Annotations" finished-at="2026-05-24T19:36:18 MSK" duration-ms="137">
+      <class name="com.example.basics.DependencyTest">
+        <test-method is-config="true" signature="initService()[pri:0, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="initService" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initService -->
+        <test-method signature="step1_startServer()[pri:1, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="step1_startServer" description="Шаг 1: Запуск сервера — базовая предпосылка для всего остального" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1_startServer -->
+        <test-method signature="step2_registerUser()[pri:0, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="step2_registerUser" description="Шаг 2: Регистрация — требует запущенного сервера" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.basics.DependencyTest.step1_startServer" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_registerUser -->
+        <test-method signature="step3_loginUser()[pri:0, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="step3_loginUser" description="Шаг 3: Вход — требует успешной регистрации" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.basics.DependencyTest.step2_registerUser" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_loginUser -->
+        <test-method signature="step4_performAction()[pri:0, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="step4_performAction" description="Шаг 4: Бизнес-операция — доступна только авторизованным" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.basics.DependencyTest.step3_loginUser" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step4_performAction -->
+        <test-method signature="step5_stopServer()[pri:0, instance:com.example.basics.DependencyTest@1460a8c0]" started-at="2026-05-24T19:36:18 MSK" name="step5_stopServer" description="Шаг 5 (cleanup): Останавливаем сервер в любом случае" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.basics.DependencyTest.step1_startServer" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step5_stopServer -->
+      </class> <!-- com.example.basics.DependencyTest -->
+      <class name="com.example.basics.TestAttributesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fastOperation()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="fastOperation" description="Быстрая операция — должна уложиться в 500 мс" finished-at="2026-05-24T19:36:18 MSK" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fastOperation -->
+        <test-method signature="registerWithEmptyLogin()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="registerWithEmptyLogin" description="Регистрация с пустым логином должна выбросить IllegalArgumentException" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Логин не может быть пустым]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Логин не может быть пустым
+at com.example.UserService.register(UserService.java:41)
+at com.example.basics.TestAttributesTest.registerWithEmptyLogin(TestAttributesTest.java:118)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithEmptyLogin -->
+        <test-method signature="registerWithShortPassword()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="registerWithShortPassword" description="Пароль &lt; 4 символов — IAE с нужным сообщением" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Пароль должен быть не короче 4 символов]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+at com.example.UserService.register(UserService.java:44)
+at com.example.basics.TestAttributesTest.registerWithShortPassword(TestAttributesTest.java:126)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithShortPassword -->
+        <test-method signature="repeatedLogin()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="repeatedLogin" description="Метод вызывается 3 раза подряд" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repeatedLogin -->
+        <test-method signature="repeatedLogin()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="repeatedLogin" description="Метод вызывается 3 раза подряд" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repeatedLogin -->
+        <test-method signature="repeatedLogin()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="repeatedLogin" description="Метод вызывается 3 раза подряд" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repeatedLogin -->
+        <test-method signature="step1_registerUser()[pri:1, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="step1_registerUser" description="Сначала регистрируем пользователя" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1_registerUser -->
+        <test-method signature="step2_loginUser()[pri:2, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="step2_loginUser" description="Затем проверяем вход" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step2_loginUser -->
+        <test-method signature="step3_deleteUser()[pri:3, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="step3_deleteUser" description="Наконец удаляем пользователя" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step3_deleteUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.basics.TestAttributesTest@78047b92]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.basics.TestAttributesTest -->
+      <class name="com.example.basics.AnnotationLifecycleTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeClass" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="testLoginSuccess" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testLoginWrongPassword()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="testLoginWrongPassword" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPassword -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testServerIsRunning()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="testServerIsRunning" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServerIsRunning -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testUserExists()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="testUserExists" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserExists -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterMethod" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterClass" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.example.basics.AnnotationLifecycleTest -->
+    </test> <!-- Lifecycle-and-Annotations -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="DataProvider-Tests" finished-at="2026-05-24T19:36:18 MSK" duration-ms="142">
+      <class name="com.example.dataprovider.DataProviderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegisterValidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterValidUser" description="Регистрация с валидными данными должна успешно создавать пользователя" data-provider="validUsers" finished-at="2026-05-24T19:36:18 MSK" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterValidUser -->
+        <test-method signature="testRegisterValidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterValidUser" description="Регистрация с валидными данными должна успешно создавать пользователя" data-provider="validUsers" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bob]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secureP@ss]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterValidUser -->
+        <test-method signature="testRegisterValidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterValidUser" description="Регистрация с валидными данными должна успешно создавать пользователя" data-provider="validUsers" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[charlie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ch@rlie99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterValidUser -->
+        <test-method signature="testRegisterValidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterValidUser" description="Регистрация с валидными данными должна успешно создавать пользователя" data-provider="validUsers" finished-at="2026-05-24T19:36:18 MSK" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[diana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[diana2024]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterValidUser -->
+        <test-method signature="testParallelRegistration(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testParallelRegistration" description="Параллельная регистрация — каждая строка в своём потоке" data-provider="parallelData" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[p_user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass0002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallelRegistration -->
+        <test-method signature="testParallelRegistration(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testParallelRegistration" description="Параллельная регистрация — каждая строка в своём потоке" data-provider="parallelData" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[p_user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass0001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallelRegistration -->
+        <test-method signature="testParallelRegistration(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testParallelRegistration" description="Параллельная регистрация — каждая строка в своём потоке" data-provider="parallelData" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[p_user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass0003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallelRegistration -->
+        <test-method signature="testRegisterInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterInvalidUser" description="Регистрация с невалидными данными должна выбрасывать исключение" data-provider="invalidRegistrations" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Логин не может быть пустым]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Логин не может быть пустым
+at com.example.UserService.register(UserService.java:41)
+at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterInvalidUser -->
+        <test-method signature="testRegisterInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterInvalidUser" description="Регистрация с невалидными данными должна выбрасывать исключение" data-provider="invalidRegistrations" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Логин не может быть пустым]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Логин не может быть пустым
+at com.example.UserService.register(UserService.java:41)
+at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterInvalidUser -->
+        <test-method signature="testRegisterInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterInvalidUser" description="Регистрация с невалидными данными должна выбрасывать исключение" data-provider="invalidRegistrations" finished-at="2026-05-24T19:36:18 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Пароль должен быть не короче 4 символов]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+at com.example.UserService.register(UserService.java:44)
+at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterInvalidUser -->
+        <test-method signature="testRegisterInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testRegisterInvalidUser" description="Регистрация с невалидными данными должна выбрасывать исключение" data-provider="invalidRegistrations" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Пароль должен быть не короче 4 символов]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+at com.example.UserService.register(UserService.java:44)
+at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterInvalidUser -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testLoginScenarios" description="Проверяем сценарии входа с разными данными" data-provider="loginScenarios" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.dataprovider.DataProviderTest.testRegisterValidUser" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testLoginScenarios" description="Проверяем сценарии входа с разными данными" data-provider="loginScenarios" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.dataprovider.DataProviderTest.testRegisterValidUser" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testLoginScenarios" description="Проверяем сценарии входа с разными данными" data-provider="loginScenarios" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.dataprovider.DataProviderTest.testRegisterValidUser" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="testLoginScenarios" description="Проверяем сценарии входа с разными данными" data-provider="loginScenarios" finished-at="2026-05-24T19:36:18 MSK" depends-on-methods="com.example.dataprovider.DataProviderTest.testRegisterValidUser" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unknown]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.dataprovider.DataProviderTest@18ce0030]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.dataprovider.DataProviderTest -->
+    </test> <!-- DataProvider-Tests -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Assertions-Demo" finished-at="2026-05-24T19:36:18 MSK" duration-ms="26">
+      <class name="com.example.assertions.AssertionsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="assertCollectionsDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="assertCollectionsDemo" description="Assert для коллекций: assertEquals, assertEqualsNoOrder" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertCollectionsDemo -->
+        <test-method signature="assertEqualsDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="assertEqualsDemo" description="Assert.assertEquals — сравнение значений" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertEqualsDemo -->
+        <test-method signature="assertNullDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="assertNullDemo" description="Assert.assertNotNull / assertNull" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertNullDemo -->
+        <test-method signature="assertThrowsDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="assertThrowsDemo" description="Assert.assertThrows — проверка исключения inline" finished-at="2026-05-24T19:36:18 MSK" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertThrowsDemo -->
+        <test-method signature="assertTrueFalseDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="assertTrueFalseDemo" description="Assert.assertTrue / assertFalse" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertTrueFalseDemo -->
+        <test-method signature="softAssertApiResponseDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="softAssertApiResponseDemo" description="SoftAssert: проверка нескольких полей объекта за раз" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssertApiResponseDemo -->
+        <test-method signature="softAssertDemo()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="softAssertDemo" description="SoftAssert: все ошибки собираются и выдаются вместе" finished-at="2026-05-24T19:36:18 MSK" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssertDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.assertions.AssertionsTest@7f010382]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.assertions.AssertionsTest -->
+    </test> <!-- Assertions-Demo -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Factory-Demo" finished-at="2026-05-24T19:36:18 MSK" duration-ms="42">
+      <class name="com.example.factory.UserRoleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="loginTest" description="Пользователь должен успешно войти в систему" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.factory.UserRoleTest@6af93788, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.example.factory.UserRoleTest@6af93788, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="loginTest" description="Пользователь должен успешно войти в систему" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.factory.UserRoleTest@ef9296d, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.example.factory.UserRoleTest@ef9296d, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="loginTest" description="Пользователь должен успешно войти в систему" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="roleCheckTest()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="roleCheckTest" description="Роль проверяется корректно (имитация)" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roleCheckTest -->
+        <test-method signature="roleCheckTest()[pri:0, instance:com.example.factory.UserRoleTest@6af93788, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="roleCheckTest" description="Роль проверяется корректно (имитация)" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roleCheckTest -->
+        <test-method signature="roleCheckTest()[pri:0, instance:com.example.factory.UserRoleTest@ef9296d, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="roleCheckTest" description="Роль проверяется корректно (имитация)" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roleCheckTest -->
+        <test-method signature="userExistsTest()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="userExistsTest" description="Пользователь должен существовать после регистрации" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userExistsTest -->
+        <test-method signature="userExistsTest()[pri:0, instance:com.example.factory.UserRoleTest@6af93788, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="userExistsTest" description="Пользователь должен существовать после регистрации" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userExistsTest -->
+        <test-method signature="userExistsTest()[pri:0, instance:com.example.factory.UserRoleTest@ef9296d, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="userExistsTest" description="Пользователь должен существовать после регистрации" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userExistsTest -->
+        <test-method signature="wrongPasswordTest()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="wrongPasswordTest" description="Вход с неверным паролем должен быть отклонён" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="wrongPasswordTest()[pri:0, instance:com.example.factory.UserRoleTest@6af93788, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="wrongPasswordTest" description="Вход с неверным паролем должен быть отклонён" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="wrongPasswordTest()[pri:0, instance:com.example.factory.UserRoleTest@ef9296d, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="wrongPasswordTest" description="Вход с неверным паролем должен быть отклонён" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.factory.UserRoleTest@36c88a32, instance params:[]]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.factory.UserRoleTest -->
+    </test> <!-- Factory-Demo -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Retry-Demo" finished-at="2026-05-24T19:36:18 MSK" duration-ms="10">
+      <class name="com.example.retry.RetryDemoTest">
+        <test-method retried="true" signature="alwaysFailingTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="alwaysFailingTest" description="Постоянно падающий тест: retry не спасёт, но мы увидим все попытки" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Этот тест всегда падает (демонстрация исчерпания retry)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alwaysFailingTest -->
+        <test-method retried="true" signature="alwaysFailingTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="alwaysFailingTest" description="Постоянно падающий тест: retry не спасёт, но мы увидим все попытки" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Этот тест всегда падает (демонстрация исчерпания retry)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alwaysFailingTest -->
+        <test-method signature="alwaysFailingTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="alwaysFailingTest" description="Постоянно падающий тест: retry не спасёт, но мы увидим все попытки" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Этот тест всегда падает (демонстрация исчерпания retry)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alwaysFailingTest -->
+        <test-method retried="true" signature="flakyNetworkTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="flakyNetworkTest" description="Нестабильный тест: упадёт при первом вызове, пройдёт при втором" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Имитация нестабильного сетевого сбоя на попытке #1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Имитация нестабильного сетевого сбоя на попытке #1
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.retry.RetryDemoTest.flakyNetworkTest(RetryDemoTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flakyNetworkTest -->
+        <test-method signature="flakyNetworkTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="flakyNetworkTest" description="Нестабильный тест: упадёт при первом вызове, пройдёт при втором" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flakyNetworkTest -->
+        <test-method signature="stableTest()[pri:0, instance:com.example.retry.RetryDemoTest@69b2283a]" started-at="2026-05-24T19:36:18 MSK" name="stableTest" description="Стабильный тест без retry — всегда проходит" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stableTest -->
+      </class> <!-- com.example.retry.RetryDemoTest -->
+    </test> <!-- Retry-Demo -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Listeners-Demo" finished-at="2026-05-24T19:36:18 MSK" duration-ms="10">
+      <class name="com.example.listeners.ListenerDemoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.listeners.ListenerDemoTest@4c9f8c13]" started-at="2026-05-24T19:36:18 MSK" name="setUp" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="failingTest()[pri:0, instance:com.example.listeners.ListenerDemoTest@4c9f8c13]" started-at="2026-05-24T19:36:18 MSK" name="failingTest" description="Этот тест намеренно падает — listener выведет ПРОВАЛ" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Намеренный провал: счётчик не равен 999 expected [999] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Намеренный провал: счётчик не равен 999 expected [999] but found [0]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at com.example.listeners.ListenerDemoTest.failingTest(ListenerDemoTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failingTest -->
+        <test-method signature="passingTest()[pri:0, instance:com.example.listeners.ListenerDemoTest@4c9f8c13]" started-at="2026-05-24T19:36:18 MSK" name="passingTest" description="Успешный тест — listener выведет УСПЕХ" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.listeners.ListenerDemoTest@4c9f8c13]" started-at="2026-05-24T19:36:18 MSK" name="tearDown" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.listeners.ListenerDemoTest -->
+      <class name="com.example.basics.AnnotationLifecycleTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="beforeSuite" finished-at="2026-05-24T19:36:18 MSK" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.example.basics.AnnotationLifecycleTest@1a0dcaa]" started-at="2026-05-24T19:36:18 MSK" name="afterSuite" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.example.basics.AnnotationLifecycleTest -->
+    </test> <!-- Listeners-Demo -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Parallel-Tests" finished-at="2026-05-24T19:36:18 MSK" duration-ms="481">
+      <class name="com.example.parallel.ParallelMethodsTest">
+        <test-method signature="parallelMethodA()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="parallelMethodA" description="Параллельный метод A" finished-at="2026-05-24T19:36:18 MSK" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelMethodA -->
+        <test-method signature="parallelMethodB()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="parallelMethodB" description="Параллельный метод B" finished-at="2026-05-24T19:36:18 MSK" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelMethodB -->
+        <test-method signature="parallelMethodC()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="parallelMethodC" description="Параллельный метод C" finished-at="2026-05-24T19:36:18 MSK" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelMethodC -->
+        <test-method signature="parallelMethodD()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="parallelMethodD" description="Параллельный метод D" finished-at="2026-05-24T19:36:18 MSK" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parallelMethodD -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="stressTest()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="stressTest" description="6 вызовов метода в пуле из 3 потоков" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stressTest -->
+        <test-method signature="threadLocalDemo()[pri:0, instance:com.example.parallel.ParallelMethodsTest@7c469c48]" started-at="2026-05-24T19:36:18 MSK" name="threadLocalDemo" description="Демонстрация ThreadLocal при параллельном запуске" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- threadLocalDemo -->
+      </class> <!-- com.example.parallel.ParallelMethodsTest -->
+    </test> <!-- Parallel-Tests -->
+    <test started-at="2026-05-24T19:36:18 MSK" name="Groups-Demo" finished-at="2026-05-24T19:36:18 MSK" duration-ms="589">
+      <class name="com.example.groups.GroupsTest">
+        <test-method is-config="true" signature="setUpGroups()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="setUpGroups" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGroups -->
+        <test-method signature="basicLoginWorks()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="basicLoginWorks" description="Базовая проверка: успешный вход" finished-at="2026-05-24T19:36:18 MSK" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicLoginWorks -->
+        <test-method signature="serverIsUp()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="serverIsUp" description="Базовая проверка: сервер запущен" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serverIsUp -->
+        <test-method is-config="true" signature="setUpGroups()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="setUpGroups" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGroups -->
+        <test-method signature="slowIntegrationCheck()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="slowIntegrationCheck" description="Имитация долгой операции (500 мс)" finished-at="2026-05-24T19:36:18 MSK" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- slowIntegrationCheck -->
+        <test-method signature="unknownUserRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="unknownUserRejected" description="Регрессия: несуществующий пользователь не проходит вход" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unknownUserRejected -->
+        <test-method signature="userCountIncrementsOnRegister()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="userCountIncrementsOnRegister" description="Регрессия: счётчик пользователей растёт при регистрации" finished-at="2026-05-24T19:36:18 MSK" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCountIncrementsOnRegister -->
+        <test-method signature="wrongPasswordRejected()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="wrongPasswordRejected" description="Регрессия: неверный пароль отклоняется" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordRejected -->
+        <test-method is-config="true" signature="tearDownGroups()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="tearDownGroups" finished-at="2026-05-24T19:36:18 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGroups -->
+        <test-method signature="deleteUserAfterSmoke()[pri:0, instance:com.example.groups.GroupsTest@4e91d63f]" started-at="2026-05-24T19:36:18 MSK" name="deleteUserAfterSmoke" description="Этот тест запустится только если все smoke-тесты прошли" depends-on-groups="smoke" finished-at="2026-05-24T19:36:18 MSK" duration-ms="1" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Сервер не запущен]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Сервер не запущен
+at com.example.UserService.register(UserService.java:38)
+at com.example.groups.GroupsTest.deleteUserAfterSmoke(GroupsTest.java:115)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserAfterSmoke -->
+      </class> <!-- com.example.groups.GroupsTest -->
+    </test> <!-- Groups-Demo -->
+  </suite> <!-- TestNG-Demo-Suite -->
+</testng-results>

@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>TestNG:  DataProvider-Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DataProvider-Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 24 19:36:18 MSK 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (142 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterInvalidUser()'><b>testRegisterInvalidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с невалидными данными должна выбрасывать исключение<br>Parameters:   , pass1234</td>
+<td><div><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055884172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055884172'><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testLoginScenarios()'><b>testLoginScenarios</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Проверяем сценарии входа с разными данными<br>Parameters: alice, pass1234, true</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testLoginScenarios()'><b>testLoginScenarios</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Проверяем сценарии входа с разными данными<br>Parameters: unknown, pass1234, false</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterValidUser()'><b>testRegisterValidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с валидными данными должна успешно создавать пользователя<br>Parameters: charlie, Ch@rlie99</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterValidUser()'><b>testRegisterValidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с валидными данными должна успешно создавать пользователя<br>Parameters: diana, diana2024</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testParallelRegistration()'><b>testParallelRegistration</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Параллельная регистрация — каждая строка в своём потоке<br>Parameters: p_user2, pass0002</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterValidUser()'><b>testRegisterValidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с валидными данными должна успешно создавать пользователя<br>Parameters: bob, secureP@ss</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterInvalidUser()'><b>testRegisterInvalidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с невалидными данными должна выбрасывать исключение<br>Parameters: valid, 123</td>
+<td><div><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354146254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354146254'><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testParallelRegistration()'><b>testParallelRegistration</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Параллельная регистрация — каждая строка в своём потоке<br>Parameters: p_user1, pass0001</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterValidUser()'><b>testRegisterValidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с валидными данными должна успешно создавать пользователя<br>Parameters: alice, pass1234</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterInvalidUser()'><b>testRegisterInvalidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с невалидными данными должна выбрасывать исключение<br>Parameters: , pass1234</td>
+<td><div><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429294120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1429294120'><pre>java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testLoginScenarios()'><b>testLoginScenarios</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Проверяем сценарии входа с разными данными<br>Parameters: alice, wrongPass, false</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testRegisterInvalidUser()'><b>testRegisterInvalidUser</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Регистрация с невалидными данными должна выбрасывать исключение<br>Parameters: valid, null</td>
+<td><div><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652714233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652714233'><pre>java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testLoginScenarios()'><b>testLoginScenarios</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Проверяем сценарии входа с разными данными<br>Parameters: alice, , false</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+<tr>
+<td title='com.example.dataprovider.DataProviderTest.testParallelRegistration()'><b>testParallelRegistration</b><br>Test class: com.example.dataprovider.DataProviderTest<br>Test method: Параллельная регистрация — каждая строка в своём потоке<br>Parameters: p_user3, pass0003</td>
+<td></td>
+<td>0</td>
+<td>com.example.dataprovider.DataProviderTest@18ce0030</td></tr>
+</table><p>
+</body>
+</html>

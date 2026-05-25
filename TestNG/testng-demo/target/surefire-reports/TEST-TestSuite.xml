@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.821" tests="78" errors="0" skipped="3" failures="3">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\User\OneDrive\Документы\testng-demo\target\test-classes;C:\Users\User\OneDrive\Документы\testng-demo\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire9064103987713549163\surefirebooter-20260524193616783_3.jar C:\Users\User\AppData\Local\Temp\surefire9064103987713549163 2026-05-24T19-36-16_577-jvmRun1 surefire-20260524193616783_1tmp surefire_0-20260524193616783_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\OneDrive\Документы\testng-demo\target\test-classes;C:\Users\User\OneDrive\Документы\testng-demo\target\classes;C:\Users\User\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\User\OneDrive\Документы\testng-demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire9064103987713549163\surefirebooter-20260524193616783_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS"/>
+    <property name="user.name" value="User"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.3+9"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="C:\Users\User\OneDrive\Документы\testng-demo"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;D:\MATLAB\runtime\win64;D:\MATLAB\bin;D:\runtime\win64;D:\bin;C:\msys64\ucrt64\bin;C:\Program Files\Git\cmd;C:\Program Files\Maven\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Maven\bin;c:\Users\User\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS"/>
+    <property name="stdin.encoding" value="Cp1251"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="basicLoginWorks" classname="com.example.groups.GroupsTest" time="0.045">
+    <system-out><![CDATA[...
+... TestNG 7.8.0 by Cédric Beust (cedric@beust.com)
+...
+
+
+========================================
+@BeforeSuite: Инициализация всего сьюта
+========================================
+
+╔══════════════════════════════════════════╗
+
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Parallel-Tests       ║
+╚══════════════════════════════════════════╝
+║  [Listener] Начало: Lifecycle-and-Annotations ║
+╚══════════════════════════════════════════╝
+
+╔══════════════════════════════════════════╗
+
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Groups-Demo          ║
+╚══════════════════════════════════════════╝
+║  [Listener] Начало: DataProvider-Tests   ║
+╚══════════════════════════════════════════╝
+  [UserService] Сервер запущен
+  [UserService] Сервер запущен
+  ▶ СТАРТ:  TestAttributesTest#fastOperation
+  ▶ СТАРТ:  ParallelMethodsTest#parallelMethodA
+
+  @BeforeGroups: Инициализация UserService
+  [UserService] Сервер запущен
+  [Parallel A] Поток: TestNG-tests-4
+  ▶ СТАРТ:  GroupsTest#basicLoginWorks
+  [smoke, fast, auth] basicLoginWorks
+  ▶ СТАРТ:  DataProviderTest#testRegisterValidUser
+  [DataProvider] Регистрация: username=alice, password=pass1234
+  [timeOut=500ms] Быстрая операция...
+  ✔ УСПЕХ:  GroupsTest#basicLoginWorks  (7 мс)
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="serverIsUp" classname="com.example.groups.GroupsTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  GroupsTest#serverIsUp
+  [smoke, fast] serverIsUp
+  ✔ УСПЕХ:  GroupsTest#serverIsUp  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="slowIntegrationCheck" classname="com.example.groups.GroupsTest" time="0.014">
+    <system-out><![CDATA[
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Parallel-Tests       ║
+║  Пройдено: 11    Упало: 0     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+  ✔ УСПЕХ:  GroupsTest#slowIntegrationCheck  (501 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="unknownUserRejected" classname="com.example.groups.GroupsTest" time="0.006">
+    <system-out><![CDATA[  ▶ СТАРТ:  GroupsTest#unknownUserRejected
+  [regression, auth] unknownUserRejected
+  ✔ УСПЕХ:  GroupsTest#unknownUserRejected  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="userCountIncrementsOnRegister" classname="com.example.groups.GroupsTest" time="0.002">
+    <system-out><![CDATA[  ▶ СТАРТ:  GroupsTest#userCountIncrementsOnRegister
+  [regression, fast] userCountIncrementsOnRegister
+  ✔ УСПЕХ:  GroupsTest#userCountIncrementsOnRegister  (2 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="wrongPasswordRejected" classname="com.example.groups.GroupsTest" time="0.006">
+    <system-out><![CDATA[  ▶ СТАРТ:  GroupsTest#wrongPasswordRejected
+  [regression, auth] wrongPasswordRejected
+  ✔ УСПЕХ:  GroupsTest#wrongPasswordRejected  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="deleteUserAfterSmoke" classname="com.example.groups.GroupsTest" time="0.004">
+    <failure message="Сервер не запущен" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Сервер не запущен
+	at com.example.UserService.register(UserService.java:38)
+	at com.example.groups.GroupsTest.deleteUserAfterSmoke(GroupsTest.java:115)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+    <system-out><![CDATA[  @AfterGroups: Остановка UserService
+
+  [UserService] Сервер остановлен
+  ▶ СТАРТ:  GroupsTest#deleteUserAfterSmoke
+  [regression, dependsOnGroups=smoke] Удаление пользователя
+  ✘ ПРОВАЛ: GroupsTest#deleteUserAfterSmoke  (1 мс)
+    Причина: Сервер не запущен
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterValidUser[alice, pass1234](1)" classname="com.example.dataprovider.DataProviderTest" time="0.076">
+    <system-out><![CDATA[  ✔ УСПЕХ:  DataProviderTest#testRegisterValidUser  (10 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterValidUser[bob, secureP@ss](2)" classname="com.example.dataprovider.DataProviderTest" time="0.027">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterValidUser
+  [DataProvider] Регистрация: username=bob, password=secureP@ss
+  ✔ УСПЕХ:  DataProviderTest#testRegisterValidUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterValidUser[charlie, Ch@rlie99](3)" classname="com.example.dataprovider.DataProviderTest" time="0.011">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterValidUser
+  [DataProvider] Регистрация: username=charlie, password=Ch@rlie99
+  ✔ УСПЕХ:  DataProviderTest#testRegisterValidUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterValidUser[diana, diana2024](4)" classname="com.example.dataprovider.DataProviderTest" time="0.008">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterValidUser
+  [DataProvider] Регистрация: username=diana, password=diana2024
+  ✔ УСПЕХ:  DataProviderTest#testRegisterValidUser  (5 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testParallelRegistration[p_user2, pass0002](1)" classname="com.example.dataprovider.DataProviderTest" time="0.006">
+    <system-out><![CDATA[
+  @BeforeGroups: Инициализация UserService
+  [UserService] Сервер запущен
+  ▶ СТАРТ:  GroupsTest#slowIntegrationCheck
+  [slow, regression] Долгая операция...
+  ▶ СТАРТ:  DataProviderTest#testParallelRegistration
+  [parallel DataProvider | TestNG-PoolService-1] Регистрация: p_user2
+  ✔ УСПЕХ:  DataProviderTest#testParallelRegistration  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testParallelRegistration[p_user1, pass0001](2)" classname="com.example.dataprovider.DataProviderTest" time="0.013">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testParallelRegistration
+  ▶ СТАРТ:  DataProviderTest#testParallelRegistration
+  [parallel DataProvider | TestNG-PoolService-2] Регистрация: p_user3
+  [parallel DataProvider | TestNG-PoolService-0] Регистрация: p_user1
+  ✔ УСПЕХ:  DataProviderTest#testParallelRegistration  (3 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testParallelRegistration[p_user3, pass0003](3)" classname="com.example.dataprovider.DataProviderTest" time="0.019">
+    <system-out><![CDATA[  ✔ УСПЕХ:  DataProviderTest#testParallelRegistration  (3 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterInvalidUser[, pass1234](1)" classname="com.example.dataprovider.DataProviderTest" time="0.007">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterInvalidUser
+  [DataProvider] Невалидная регистрация: username='', password='pass1234'
+  ✔ УСПЕХ:  DataProviderTest#testRegisterInvalidUser  (3 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterInvalidUser[  , pass1234](2)" classname="com.example.dataprovider.DataProviderTest" time="0.009">
+    <system-out><![CDATA[  ✔ УСПЕХ:  DataProviderTest#testRegisterInvalidUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterInvalidUser[valid, 123](3)" classname="com.example.dataprovider.DataProviderTest" time="0.005">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterInvalidUser
+  [DataProvider] Невалидная регистрация: username='valid', password='123'
+  ✔ УСПЕХ:  DataProviderTest#testRegisterInvalidUser  (2 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterInvalidUser[valid, null](4)" classname="com.example.dataprovider.DataProviderTest" time="0.005">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterInvalidUser
+  [DataProvider] Невалидная регистрация: username='valid', password='null'
+  ▶ СТАРТ:  TestAttributesTest#registerWithEmptyLogin
+  ✔ УСПЕХ:  DataProviderTest#testRegisterInvalidUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginScenarios[alice, pass1234, true](1)" classname="com.example.dataprovider.DataProviderTest" time="0.012">
+    <system-out><![CDATA[  ✔ УСПЕХ:  DataProviderTest#testLoginScenarios  (16 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginScenarios[alice, wrongPass, false](2)" classname="com.example.dataprovider.DataProviderTest" time="0.006">
+    <system-out><![CDATA[  [DataProvider] Вход: username=alice, expected=false
+  ✔ УСПЕХ:  DataProviderTest#testLoginScenarios  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginScenarios[alice, , false](3)" classname="com.example.dataprovider.DataProviderTest" time="0.002">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#parallelMethodB
+  ▶ СТАРТ:  DataProviderTest#testLoginScenarios
+  [DataProvider] Вход: username=alice, expected=false
+  [Parallel B] Поток: TestNG-tests-4
+  ✔ УСПЕХ:  DataProviderTest#testLoginScenarios  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginScenarios[unknown, pass1234, false](4)" classname="com.example.dataprovider.DataProviderTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testLoginScenarios
+  [DataProvider] Вход: username=unknown, expected=false
+  ✔ УСПЕХ:  DataProviderTest#testLoginScenarios  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="fastOperation" classname="com.example.basics.TestAttributesTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  DataProviderTest#testRegisterInvalidUser
+  [DataProvider] Невалидная регистрация: username='  ', password='pass1234'
+  ✔ УСПЕХ:  TestAttributesTest#fastOperation  (62 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="registerWithEmptyLogin" classname="com.example.basics.TestAttributesTest" time="0.009">
+    <system-out><![CDATA[  [expectedExceptions] Попытка регистрации с пустым логином
+  ✔ УСПЕХ:  TestAttributesTest#registerWithEmptyLogin  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="registerWithShortPassword" classname="com.example.basics.TestAttributesTest" time="0.007">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#registerWithShortPassword
+  [expectedExceptions] Попытка регистрации с коротким паролем
+  ✔ УСПЕХ:  TestAttributesTest#registerWithShortPassword  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="repeatedLogin" classname="com.example.basics.TestAttributesTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#repeatedLogin
+  [invocationCount] Вызов #1
+  ✔ УСПЕХ:  TestAttributesTest#repeatedLogin  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="repeatedLogin" classname="com.example.basics.TestAttributesTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#repeatedLogin
+  [invocationCount] Вызов #2
+  ✔ УСПЕХ:  TestAttributesTest#repeatedLogin  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="repeatedLogin" classname="com.example.basics.TestAttributesTest" time="0.005">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#repeatedLogin
+  [invocationCount] Вызов #3
+  ✔ УСПЕХ:  TestAttributesTest#repeatedLogin  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step1_registerUser" classname="com.example.basics.TestAttributesTest" time="0.0">
+    <system-out><![CDATA[    @AfterMethod: Удаление тестового пользователя
+  @AfterClass: Остановка сервера
+
+  [UserService] Сервер остановлен
+  ▶ СТАРТ:  TestAttributesTest#step1_registerUser
+  [priority=1] Регистрация пользователя alice
+  ▶ СТАРТ:  DataProviderTest#testLoginScenarios
+  ✔ УСПЕХ:  TestAttributesTest#step1_registerUser  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step2_loginUser" classname="com.example.basics.TestAttributesTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#step2_loginUser
+  [priority=2] Вход alice
+  ✔ УСПЕХ:  TestAttributesTest#step2_loginUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step3_deleteUser" classname="com.example.basics.TestAttributesTest" time="0.01">
+    <system-out><![CDATA[  ▶ СТАРТ:  TestAttributesTest#step3_deleteUser
+  [DataProvider] Вход: username=alice, expected=  [priority=3] Удаление alice
+true
+  ✔ УСПЕХ:  TestAttributesTest#step3_deleteUser  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginSuccess" classname="com.example.basics.AnnotationLifecycleTest" time="0.001">
+    <system-out><![CDATA[
+  @BeforeClass: Создание UserService для класса
+  [UserService] Сервер запущен
+    @BeforeMethod: Регистрация тестового пользователя
+  ▶ СТАРТ:  AnnotationLifecycleTest#testLoginSuccess
+      @Test: testLoginSuccess
+  ✔ УСПЕХ:  AnnotationLifecycleTest#testLoginSuccess  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testLoginWrongPassword" classname="com.example.basics.AnnotationLifecycleTest" time="0.001">
+    <system-out><![CDATA[    @AfterMethod: Удаление тестового пользователя
+    @BeforeMethod: Регистрация тестового пользователя
+  ▶ СТАРТ:  AnnotationLifecycleTest#testLoginWrongPassword
+      @Test: testLoginWrongPassword
+  ✔ УСПЕХ:  AnnotationLifecycleTest#testLoginWrongPassword  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testServerIsRunning" classname="com.example.basics.AnnotationLifecycleTest" time="0.001">
+    <system-out><![CDATA[    @AfterMethod: Удаление тестового пользователя
+    @BeforeMethod: Регистрация тестового пользователя
+  ▶ СТАРТ:  AnnotationLifecycleTest#testServerIsRunning
+      @Test: testServerIsRunning
+  ✔ УСПЕХ:  AnnotationLifecycleTest#testServerIsRunning  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="testUserExists" classname="com.example.basics.AnnotationLifecycleTest" time="0.003">
+    <system-out><![CDATA[    @AfterMethod: Удаление тестового пользователя
+    @BeforeMethod: Регистрация тестового пользователя
+  ▶ СТАРТ:  AnnotationLifecycleTest#testUserExists
+      @Test: testUserExists
+  ✔ УСПЕХ:  AnnotationLifecycleTest#testUserExists  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step1_startServer" classname="com.example.basics.DependencyTest" time="0.002">
+    <system-out><![CDATA[  ▶ СТАРТ:  DependencyTest#step1_startServer
+
+  [STEP 1] Запуск сервера
+  [UserService] Сервер запущен
+  ✔ УСПЕХ:  DependencyTest#step1_startServer  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step2_registerUser" classname="com.example.basics.DependencyTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  DependencyTest#step2_registerUser
+  [STEP 2] Регистрация пользователя
+  ✔ УСПЕХ:  DependencyTest#step2_registerUser  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step3_loginUser" classname="com.example.basics.DependencyTest" time="0.006">
+    <system-out><![CDATA[  ▶ СТАРТ:  DependencyTest#step3_loginUser
+  [STEP 3] Вход пользователя
+  ✔ УСПЕХ:  DependencyTest#step3_loginUser  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step4_performAction" classname="com.example.basics.DependencyTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  DependencyTest#step4_performAction
+  [STEP 4] Выполнение действия авторизованным пользователем
+  ✔ УСПЕХ:  DependencyTest#step4_performAction  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="step5_stopServer" classname="com.example.basics.DependencyTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  DependencyTest#step5_stopServer
+  [STEP 5 — alwaysRun] Остановка сервера
+  [UserService] Сервер остановлен
+  ✔ УСПЕХ:  DependencyTest#step5_stopServer  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="parallelMethodA" classname="com.example.parallel.ParallelMethodsTest" time="0.002">
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Lifecycle-and-Annotations ║
+║  Пройдено: 18    Упало: 0     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+  ▶ СТАРТ:  DataProviderTest#testLoginScenarios
+  ✔ УСПЕХ:  ParallelMethodsTest#parallelMethodA  (105 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="parallelMethodB" classname="com.example.parallel.ParallelMethodsTest" time="0.001"/>
+  <testcase name="parallelMethodC" classname="com.example.parallel.ParallelMethodsTest" time="0.01">
+    <system-out><![CDATA[  ✔ УСПЕХ:  ListenerDemoTest#passingTest  (1 мс)
+  [UserService] Сервер остановлен
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Listeners-Demo       ║
+║  Пройдено: 1     Упало: 1     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+  ✔ УСПЕХ:  ParallelMethodsTest#parallelMethodC  (102 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="parallelMethodD" classname="com.example.parallel.ParallelMethodsTest" time="0.005">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#parallelMethodD
+  [Parallel D] Поток: TestNG-tests-4
+  ✔ УСПЕХ:  ParallelMethodsTest#parallelMethodD  (103 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.001">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  [StressTest invocation] Поток: TestNG-methods-3
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.001">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  [StressTest invocation] Поток: TestNG-methods-3
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.015">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  [StressTest invocation] Поток: TestNG-methods-3
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.022">
+    <system-out><![CDATA[  [StressTest invocation] Поток: TestNG-methods-1
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (4 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.027">
+    <system-out><![CDATA[  [StressTest invocation] Поток: TestNG-methods-2
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (4 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stressTest" classname="com.example.parallel.ParallelMethodsTest" time="0.007">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#stressTest
+  [StressTest invocation] Поток: TestNG-methods-3
+  ✔ УСПЕХ:  ParallelMethodsTest#stressTest  (4 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="threadLocalDemo" classname="com.example.parallel.ParallelMethodsTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  ParallelMethodsTest#threadLocalDemo
+  [ThreadLocal] Поток: TestNG-tests-4, значение: context_for_TestNG-tests-4
+  ✔ УСПЕХ:  ParallelMethodsTest#threadLocalDemo  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="assertCollectionsDemo" classname="com.example.assertions.AssertionsTest" time="0.0">
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  DataProvider-Tests   ║
+║  Пройдено: 15    Упало: 0     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Assertions-Demo      ║
+╚══════════════════════════════════════════╝
+  [UserService] Сервер запущен
+  ▶ СТАРТ:  AssertionsTest#assertCollectionsDemo
+  ✔ УСПЕХ:  AssertionsTest#assertCollectionsDemo  (3 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="assertEqualsDemo" classname="com.example.assertions.AssertionsTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  AssertionsTest#assertEqualsDemo
+  ✔ УСПЕХ:  AssertionsTest#assertEqualsDemo  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="assertNullDemo" classname="com.example.assertions.AssertionsTest" time="0.002">
+    <system-out><![CDATA[  ▶ СТАРТ:  AssertionsTest#assertNullDemo
+  ✔ УСПЕХ:  AssertionsTest#assertNullDemo  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="assertThrowsDemo" classname="com.example.assertions.AssertionsTest" time="0.007">
+    <system-out><![CDATA[
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Factory-Demo         ║
+╚══════════════════════════════════════════╝
+  ▶ СТАРТ:  AssertionsTest#assertThrowsDemo
+  ✔ УСПЕХ:  AssertionsTest#assertThrowsDemo  (5 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="assertTrueFalseDemo" classname="com.example.assertions.AssertionsTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  AssertionsTest#assertTrueFalseDemo
+  ✔ УСПЕХ:  AssertionsTest#assertTrueFalseDemo  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="softAssertApiResponseDemo" classname="com.example.assertions.AssertionsTest" time="0.001">
+    <system-out><![CDATA[  [UserService] Сервер запущен
+
+  [Factory] Подготовка экземпляра для роли 'viewer' (user: viewer_user)
+  ▶ СТАРТ:  AssertionsTest#softAssertApiResponseDemo
+  ▶ СТАРТ:  UserRoleTest#loginTest
+  [Factory / viewer] Тест входа
+  ✔ УСПЕХ:  UserRoleTest#loginTest  (3 мс)
+  ✔ УСПЕХ:  AssertionsTest#softAssertApiResponseDemo  (4 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="softAssertDemo" classname="com.example.assertions.AssertionsTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  AssertionsTest#softAssertDemo
+  [UserService] Сервер запущен
+
+  [Factory] Подготовка экземпляра для роли 'admin' (user: admin_user)
+  ✔ УСПЕХ:  AssertionsTest#softAssertDemo  (2 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.example.factory.UserRoleTest" time="0.002"/>
+  <testcase name="loginTest" classname="com.example.factory.UserRoleTest" time="0.007">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#loginTest
+  [Factory / admin] Тест входа
+  ✔ УСПЕХ:  UserRoleTest#loginTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.example.factory.UserRoleTest" time="0.01">
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Assertions-Demo      ║
+║  Пройдено: 7     [UserService] Сервер запущен
+  Упало: 0     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+
+  [Factory] Подготовка экземпляра для роли 'editor' (user: editor_user)
+  ▶ СТАРТ:  UserRoleTest#loginTest
+  [Factory / editor] Тест входа
+  ✔ УСПЕХ:  UserRoleTest#loginTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="roleCheckTest" classname="com.example.factory.UserRoleTest" time="0.002">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#roleCheckTest
+  [Factory / viewer] Тест проверки роли
+  ✔ УСПЕХ:  UserRoleTest#roleCheckTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="roleCheckTest" classname="com.example.factory.UserRoleTest" time="0.006">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#roleCheckTest
+  [Factory / admin] Тест проверки роли
+  ✔ УСПЕХ:  UserRoleTest#roleCheckTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="roleCheckTest" classname="com.example.factory.UserRoleTest" time="0.004">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#roleCheckTest
+  [Factory / editor] Тест проверки роли
+  ✔ УСПЕХ:  UserRoleTest#roleCheckTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="userExistsTest" classname="com.example.factory.UserRoleTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#userExistsTest
+  [Factory / viewer] Тест существования пользователя
+  ✔ УСПЕХ:  UserRoleTest#userExistsTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="userExistsTest" classname="com.example.factory.UserRoleTest" time="0.001">
+    <system-out><![CDATA[  ✔ УСПЕХ:  ParallelMethodsTest#parallelMethodB  (101 мс)
+  ▶ СТАРТ:  UserRoleTest#userExistsTest
+  [Factory / admin] Тест существования пользователя
+  ✔ УСПЕХ:  UserRoleTest#userExistsTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="userExistsTest" classname="com.example.factory.UserRoleTest" time="0.001">
+    <system-out><![CDATA[
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Retry-Demo           ║
+╚══════════════════════════════════════════╝
+  ▶ СТАРТ:  UserRoleTest#userExistsTest
+  [Factory / editor] Тест существования пользователя
+  ✔ УСПЕХ:  UserRoleTest#userExistsTest  (1 мс)
+  ▶ СТАРТ:  ]]></system-out>
+  </testcase>
+  <testcase name="wrongPasswordTest" classname="com.example.factory.UserRoleTest" time="0.016">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#wrongPasswordTest
+  ▶ СТАРТ:  RetryDemoTest#alwaysFailingTest
+  [alwaysFailingTest] Выполнение — всегда падает
+  [Retry] Исчерпаны все 2 попытки для: alwaysFailingTest
+  ✘ ПРОВАЛ: RetryDemoTest#alwaysFailingTest  (0 мс)
+    Причина: Этот тест всегда падает (демонстрация исчерпания retry)
+  [Factory / viewer] Тест неверного пароля
+  ✔ УСПЕХ:  UserRoleTest#wrongPasswordTest  (4 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="wrongPasswordTest" classname="com.example.factory.UserRoleTest" time="0.005">
+    <system-out><![CDATA[  ▶ СТАРТ:  UserRoleTest#wrongPasswordTest
+  [Factory / admin] Тест неверного пароля
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Retry-Demo           ║
+║  Пройдено: 2     Упало: 1     Пропущено: 3    ║
+╚══════════════════════════════════════════╝
+
+  ✔ УСПЕХ:  UserRoleTest#wrongPasswordTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="wrongPasswordTest" classname="com.example.factory.UserRoleTest" time="0.002">
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+  ▶ СТАРТ:  UserRoleTest#wrongPasswordTest
+  [Factory / editor] Тест неверного пароля
+  ✔ УСПЕХ:  UserRoleTest#wrongPasswordTest  (1 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="alwaysFailingTest" classname="com.example.retry.RetryDemoTest" time="0.0">
+    <skipped message="Этот тест всегда падает (демонстрация исчерпания retry)"/>
+    <system-out><![CDATA[ParallelMethodsTest#parallelMethodC
+  ▶ СТАРТ:  RetryDemoTest#alwaysFailingTest
+  [Parallel C] Поток: TestNG-tests-4
+  [alwaysFailingTest] Выполнение — всегда падает
+  [Retry] Попытка 1/2 для метода: alwaysFailingTest
+  ⚠ ПРОПУСК: RetryDemoTest#alwaysFailingTest
+]]></system-out>
+  </testcase>
+  <testcase name="alwaysFailingTest" classname="com.example.retry.RetryDemoTest" time="0.0">
+    <skipped message="Этот тест всегда падает (демонстрация исчерпания retry)"/>
+    <system-out><![CDATA[  ▶ СТАРТ:  RetryDemoTest#alwaysFailingTest
+  [alwaysFailingTest] Выполнение — всегда падает
+  [Retry] Попытка 2/2 для метода: alwaysFailingTest
+  ⚠ ПРОПУСК: RetryDemoTest#alwaysFailingTest
+]]></system-out>
+  </testcase>
+  <testcase name="alwaysFailingTest" classname="com.example.retry.RetryDemoTest" time="0.02">
+    <failure message="Этот тест всегда падает (демонстрация исчерпания retry)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+  </testcase>
+  <testcase name="flakyNetworkTest" classname="com.example.retry.RetryDemoTest" time="0.0">
+    <skipped message="Имитация нестабильного сетевого сбоя на попытке #1"/>
+    <system-out><![CDATA[  ▶ СТАРТ:  RetryDemoTest#flakyNetworkTest
+  [flakyNetworkTest] Попытка #1
+  [Retry] Попытка 1/2 для метода: flakyNetworkTest
+  ⚠ ПРОПУСК: RetryDemoTest#flakyNetworkTest
+]]></system-out>
+  </testcase>
+  <testcase name="flakyNetworkTest" classname="com.example.retry.RetryDemoTest" time="0.003">
+    <system-out><![CDATA[  ▶ СТАРТ:  RetryDemoTest#flakyNetworkTest
+  [flakyNetworkTest] Попытка #2
+  [flakyNetworkTest] PASS на попытке #2
+  ✔ УСПЕХ:  RetryDemoTest#flakyNetworkTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="stableTest" classname="com.example.retry.RetryDemoTest" time="0.002">
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+  ▶ СТАРТ:  RetryDemoTest#stableTest
+  [stableTest] Стабильный тест — всегда PASS
+  ✔ УСПЕХ:  RetryDemoTest#stableTest  (0 мс)
+]]></system-out>
+  </testcase>
+  <testcase name="failingTest" classname="com.example.listeners.ListenerDemoTest" time="0.0">
+    <failure message="Намеренный провал: счётчик не равен 999 expected [999] but found [0]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Намеренный провал: счётчик не равен 999 expected [999] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at com.example.listeners.ListenerDemoTest.failingTest(ListenerDemoTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+    <system-out><![CDATA[  [UserService] Сервер остановлен
+
+╔══════════════════════════════════════════╗
+║  [Listener] Конец:  Factory-Demo         ║
+║  Пройдено: 12    Упало: 0     Пропущено: 0    ║
+╚══════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════╗
+║  [Listener] Начало: Listeners-Demo       ║
+╚══════════════════════════════════════════╝
+  [UserService] Сервер запущен
+  ▶ СТАРТ:  ListenerDemoTest#failingTest
+]]></system-out>
+  </testcase>
+  <testcase name="passingTest" classname="com.example.listeners.ListenerDemoTest" time="0.0">
+    <system-out><![CDATA[  ✘ ПРОВАЛ: ListenerDemoTest#failingTest  (4 мс)
+    Причина: Намеренный провал: счётчик не равен 999 expected [999] but found [0]
+  ▶ СТАРТ:  ListenerDemoTest#passingTest
+]]></system-out>
+  </testcase>
+</testsuite>

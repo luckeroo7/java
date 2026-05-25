@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestNG-Demo-Suite</th></tr>
+<tr><td><a href="#t0">Lifecycle-and-Annotations</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">137</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">DataProvider-Tests</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">142</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Assertions-Demo</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Factory-Demo</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">42</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Retry-Demo</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">10</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">Listeners-Demo</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10</td><td></td><td></td></tr>
+<tr><td><a href="#t6">Parallel-Tests</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">481</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t7">Groups-Demo</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">589</td><td>regression, smoke</td><td></td></tr>
+<tr><th>Total</th><th class="num">72</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">3</th><th class="num">1 437</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestNG-Demo-Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Lifecycle-and-Annotations &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.example.basics.AnnotationLifecycleTest</td><td><a href="#m0">testLoginSuccess</a></td><td rowspan="1">1779640578193</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m1">testLoginWrongPassword</a></td><td rowspan="1">1779640578196</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m2">testServerIsRunning</a></td><td rowspan="1">1779640578198</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m3">testUserExists</a></td><td rowspan="1">1779640578201</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="5">com.example.basics.DependencyTest</td><td><a href="#m4">step1_startServer</a></td><td rowspan="1">1779640578207</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m5">step2_registerUser</a></td><td rowspan="1">1779640578210</td><td rowspan="1">1</td></tr><tr class="passedodd"><td><a href="#m6">step3_loginUser</a></td><td rowspan="1">1779640578213</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m7">step4_performAction</a></td><td rowspan="1">1779640578215</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m8">step5_stopServer</a></td><td rowspan="1">1779640578216</td><td rowspan="1">1</td></tr><tr class="passedeven"><td rowspan="9">com.example.basics.TestAttributesTest</td><td><a href="#m9">fastOperation</a></td><td rowspan="1">1779640578116</td><td rowspan="1">62</td></tr><tr class="passedeven"><td><a href="#m10">registerWithEmptyLogin</a></td><td rowspan="1">1779640578182</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m11">registerWithShortPassword</a></td><td rowspan="1">1779640578184</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m12">repeatedLogin</a></td><td rowspan="3">1779640578189</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m13">repeatedLogin</a></td></tr><tr class="passedeven"><td><a href="#m14">repeatedLogin</a></td></tr><tr class="passedeven"><td><a href="#m15">step1_registerUser</a></td><td rowspan="1">1779640578205</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m16">step2_loginUser</a></td><td rowspan="1">1779640578218</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m17">step3_deleteUser</a></td><td rowspan="1">1779640578220</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">DataProvider-Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="15">com.example.dataprovider.DataProviderTest</td><td><a href="#m18">testLoginScenarios</a></td><td rowspan="4">1779640578205</td><td rowspan="4">16</td></tr><tr class="passedeven"><td><a href="#m19">testLoginScenarios</a></td></tr><tr class="passedeven"><td><a href="#m20">testLoginScenarios</a></td></tr><tr class="passedeven"><td><a href="#m21">testLoginScenarios</a></td></tr><tr class="passedeven"><td><a href="#m22">testParallelRegistration</a></td><td rowspan="3">1779640578159</td><td rowspan="3">1</td></tr><tr class="passedeven"><td><a href="#m23">testParallelRegistration</a></td></tr><tr class="passedeven"><td><a href="#m24">testParallelRegistration</a></td></tr><tr class="passedeven"><td><a href="#m25">testRegisterInvalidUser</a></td><td rowspan="4">1779640578178</td><td rowspan="4">1</td></tr><tr class="passedeven"><td><a href="#m26">testRegisterInvalidUser</a></td></tr><tr class="passedeven"><td><a href="#m27">testRegisterInvalidUser</a></td></tr><tr class="passedeven"><td><a href="#m28">testRegisterInvalidUser</a></td></tr><tr class="passedeven"><td><a href="#m29">testRegisterValidUser</a></td><td rowspan="4">1779640578135</td><td rowspan="4">1</td></tr><tr class="passedeven"><td><a href="#m30">testRegisterValidUser</a></td></tr><tr class="passedeven"><td><a href="#m31">testRegisterValidUser</a></td></tr><tr class="passedeven"><td><a href="#m32">testRegisterValidUser</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Assertions-Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.example.assertions.AssertionsTest</td><td><a href="#m33">assertCollectionsDemo</a></td><td rowspan="1">1779640578291</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m34">assertEqualsDemo</a></td><td rowspan="1">1779640578295</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m35">assertNullDemo</a></td><td rowspan="1">1779640578296</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m36">assertThrowsDemo</a></td><td rowspan="1">1779640578298</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m37">assertTrueFalseDemo</a></td><td rowspan="1">1779640578304</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m38">softAssertApiResponseDemo</a></td><td rowspan="1">1779640578306</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m39">softAssertDemo</a></td><td rowspan="1">1779640578311</td><td rowspan="1">2</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Factory-Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">com.example.factory.UserRoleTest</td><td><a href="#m40">loginTest</a></td><td rowspan="3">1779640578313</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m41">loginTest</a></td></tr><tr class="passedeven"><td><a href="#m42">loginTest</a></td></tr><tr class="passedeven"><td><a href="#m43">roleCheckTest</a></td><td rowspan="3">1779640578322</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m44">roleCheckTest</a></td></tr><tr class="passedeven"><td><a href="#m45">roleCheckTest</a></td></tr><tr class="passedeven"><td><a href="#m46">userExistsTest</a></td><td rowspan="3">1779640578325</td><td rowspan="3">1</td></tr><tr class="passedeven"><td><a href="#m47">userExistsTest</a></td></tr><tr class="passedeven"><td><a href="#m48">userExistsTest</a></td></tr><tr class="passedeven"><td><a href="#m49">wrongPasswordTest</a></td><td rowspan="3">1779640578326</td><td rowspan="3">4</td></tr><tr class="passedeven"><td><a href="#m50">wrongPasswordTest</a></td></tr><tr class="passedeven"><td><a href="#m51">wrongPasswordTest</a></td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Retry-Demo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.example.retry.RetryDemoTest</td><td><a href="#m52">alwaysFailingTest</a></td><td rowspan="1">1779640578328</td><td rowspan="1">0</td></tr><tr><th colspan="4">Retry-Demo &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">com.example.retry.RetryDemoTest</td><td><a href="#m53">alwaysFailingTest</a></td><td rowspan="2">1779640578327</td><td rowspan="2">0</td></tr><tr class="retriedeven"><td><a href="#m54">alwaysFailingTest</a></td></tr><tr class="retriedeven"><td><a href="#m55">flakyNetworkTest</a></td><td rowspan="1">1779640578332</td><td rowspan="1">1</td></tr><tr><th colspan="4">Retry-Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.example.retry.RetryDemoTest</td><td><a href="#m56">flakyNetworkTest</a></td><td rowspan="1">1779640578333</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m57">stableTest</a></td><td rowspan="1">1779640578335</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">Listeners-Demo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.example.listeners.ListenerDemoTest</td><td><a href="#m58">failingTest</a></td><td rowspan="1">1779640578354</td><td rowspan="1">4</td></tr><tr><th colspan="4">Listeners-Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.example.listeners.ListenerDemoTest</td><td><a href="#m59">passingTest</a></td><td rowspan="1">1779640578360</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t6"><tr><th colspan="4">Parallel-Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">com.example.parallel.ParallelMethodsTest</td><td><a href="#m60">parallelMethodA</a></td><td rowspan="1">1779640578116</td><td rowspan="1">105</td></tr><tr class="passedeven"><td><a href="#m61">parallelMethodB</a></td><td rowspan="1">1779640578223</td><td rowspan="1">101</td></tr><tr class="passedeven"><td><a href="#m62">parallelMethodC</a></td><td rowspan="1">1779640578326</td><td rowspan="1">102</td></tr><tr class="passedeven"><td><a href="#m63">parallelMethodD</a></td><td rowspan="1">1779640578431</td><td rowspan="1">103</td></tr><tr class="passedeven"><td><a href="#m64">stressTest</a></td><td rowspan="6">1779640578548</td><td rowspan="6">4</td></tr><tr class="passedeven"><td><a href="#m65">stressTest</a></td></tr><tr class="passedeven"><td><a href="#m66">stressTest</a></td></tr><tr class="passedeven"><td><a href="#m67">stressTest</a></td></tr><tr class="passedeven"><td><a href="#m68">stressTest</a></td></tr><tr class="passedeven"><td><a href="#m69">stressTest</a></td></tr><tr class="passedeven"><td><a href="#m70">threadLocalDemo</a></td><td rowspan="1">1779640578564</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t7"><tr><th colspan="4">Groups-Demo &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.example.groups.GroupsTest</td><td><a href="#m71">deleteUserAfterSmoke</a></td><td rowspan="1">1779640578672</td><td rowspan="1">1</td></tr><tr><th colspan="4">Groups-Demo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.example.groups.GroupsTest</td><td><a href="#m72">basicLoginWorks</a></td><td rowspan="1">1779640578119</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m73">serverIsUp</a></td><td rowspan="1">1779640578150</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m74">slowIntegrationCheck</a></td><td rowspan="1">1779640578155</td><td rowspan="1">501</td></tr><tr class="passedeven"><td><a href="#m75">unknownUserRejected</a></td><td rowspan="1">1779640578659</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m76">userCountIncrementsOnRegister</a></td><td rowspan="1">1779640578662</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m77">wrongPasswordRejected</a></td><td rowspan="1">1779640578666</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Lifecycle-and-Annotations</h2><h3 id="m0">com.example.basics.AnnotationLifecycleTest#testLoginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.example.basics.AnnotationLifecycleTest#testLoginWrongPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.example.basics.AnnotationLifecycleTest#testServerIsRunning</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.example.basics.AnnotationLifecycleTest#testUserExists</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.example.basics.DependencyTest#step1_startServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.example.basics.DependencyTest#step2_registerUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.example.basics.DependencyTest#step3_loginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.example.basics.DependencyTest#step4_performAction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.example.basics.DependencyTest#step5_stopServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.example.basics.TestAttributesTest#fastOperation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.example.basics.TestAttributesTest#registerWithEmptyLogin</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.basics.TestAttributesTest.registerWithEmptyLogin(TestAttributesTest.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.example.basics.TestAttributesTest#registerWithShortPassword</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.basics.TestAttributesTest.registerWithShortPassword(TestAttributesTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.example.basics.TestAttributesTest#repeatedLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.example.basics.TestAttributesTest#repeatedLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.example.basics.TestAttributesTest#repeatedLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.example.basics.TestAttributesTest#step1_registerUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.example.basics.TestAttributesTest#step2_loginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.example.basics.TestAttributesTest#step3_deleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DataProvider-Tests</h2><h3 id="m18">com.example.dataprovider.DataProviderTest#testLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alice</td><td>pass1234</td><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.example.dataprovider.DataProviderTest#testLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>unknown</td><td>pass1234</td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.example.dataprovider.DataProviderTest#testLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alice</td><td>wrongPass</td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.example.dataprovider.DataProviderTest#testLoginScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alice</td><td></td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.example.dataprovider.DataProviderTest#testParallelRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>p_user2</td><td>pass0002</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.example.dataprovider.DataProviderTest#testParallelRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>p_user1</td><td>pass0001</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.example.dataprovider.DataProviderTest#testParallelRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>p_user3</td><td>pass0003</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.example.dataprovider.DataProviderTest#testRegisterInvalidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>  </td><td>pass1234</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.example.dataprovider.DataProviderTest#testRegisterInvalidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>valid</td><td>123</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.example.dataprovider.DataProviderTest#testRegisterInvalidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td>pass1234</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Логин не может быть пустым
+	at com.example.UserService.register(UserService.java:41)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.example.dataprovider.DataProviderTest#testRegisterInvalidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>valid</td><td>null</td></tr><tr><th colspan="2">Expected Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Пароль должен быть не короче 4 символов
+	at com.example.UserService.register(UserService.java:44)
+	at com.example.dataprovider.DataProviderTest.testRegisterInvalidUser(DataProviderTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.example.dataprovider.DataProviderTest#testRegisterValidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>charlie</td><td>Ch@rlie99</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.example.dataprovider.DataProviderTest#testRegisterValidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>diana</td><td>diana2024</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.example.dataprovider.DataProviderTest#testRegisterValidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>bob</td><td>secureP@ss</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.example.dataprovider.DataProviderTest#testRegisterValidUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>alice</td><td>pass1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Assertions-Demo</h2><h3 id="m33">com.example.assertions.AssertionsTest#assertCollectionsDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.example.assertions.AssertionsTest#assertEqualsDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.example.assertions.AssertionsTest#assertNullDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.example.assertions.AssertionsTest#assertThrowsDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.example.assertions.AssertionsTest#assertTrueFalseDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">com.example.assertions.AssertionsTest#softAssertApiResponseDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">com.example.assertions.AssertionsTest#softAssertDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Factory-Demo</h2><h3 id="m40">com.example.factory.UserRoleTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">com.example.factory.UserRoleTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">com.example.factory.UserRoleTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">com.example.factory.UserRoleTest#roleCheckTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">com.example.factory.UserRoleTest#roleCheckTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">com.example.factory.UserRoleTest#roleCheckTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">com.example.factory.UserRoleTest#userExistsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">com.example.factory.UserRoleTest#userExistsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">com.example.factory.UserRoleTest#userExistsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">com.example.factory.UserRoleTest#wrongPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">com.example.factory.UserRoleTest#wrongPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">com.example.factory.UserRoleTest#wrongPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Retry-Demo</h2><h3 id="m52">com.example.retry.RetryDemoTest#alwaysFailingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">com.example.retry.RetryDemoTest#alwaysFailingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">com.example.retry.RetryDemoTest#alwaysFailingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Этот тест всегда падает (демонстрация исчерпания retry)
+	at com.example.retry.RetryDemoTest.alwaysFailingTest(RetryDemoTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">com.example.retry.RetryDemoTest#flakyNetworkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Имитация нестабильного сетевого сбоя на попытке #1
+	at com.example.retry.RetryDemoTest.flakyNetworkTest(RetryDemoTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">com.example.retry.RetryDemoTest#flakyNetworkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">com.example.retry.RetryDemoTest#stableTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Listeners-Demo</h2><h3 id="m58">com.example.listeners.ListenerDemoTest#failingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Намеренный провал: счётчик не равен 999 expected [999] but found [0]
+	at com.example.listeners.ListenerDemoTest.failingTest(ListenerDemoTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">com.example.listeners.ListenerDemoTest#passingTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Parallel-Tests</h2><h3 id="m60">com.example.parallel.ParallelMethodsTest#parallelMethodA</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">com.example.parallel.ParallelMethodsTest#parallelMethodB</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">com.example.parallel.ParallelMethodsTest#parallelMethodC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">com.example.parallel.ParallelMethodsTest#parallelMethodD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m67">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m68">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m69">com.example.parallel.ParallelMethodsTest#stressTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m70">com.example.parallel.ParallelMethodsTest#threadLocalDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Groups-Demo</h2><h3 id="m71">com.example.groups.GroupsTest#deleteUserAfterSmoke</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: Сервер не запущен
+	at com.example.UserService.register(UserService.java:38)
+	at com.example.groups.GroupsTest.deleteUserAfterSmoke(GroupsTest.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m72">com.example.groups.GroupsTest#basicLoginWorks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m73">com.example.groups.GroupsTest#serverIsUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m74">com.example.groups.GroupsTest#slowIntegrationCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m75">com.example.groups.GroupsTest#unknownUserRejected</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m76">com.example.groups.GroupsTest#userCountIncrementsOnRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m77">com.example.groups.GroupsTest#wrongPasswordRejected</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
