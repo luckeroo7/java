@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="JNIDemoNative/JNIDemoNative.vcxproj" Id="498ecc13-fade-4c95-a2d0-fe1ea279c4c4" />
+</Solution>
